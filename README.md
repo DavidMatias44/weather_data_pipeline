@@ -12,6 +12,10 @@ An end-to-end data pipeline for collecting, transforming, and orchestrating weat
 
 - **uv**. Python package and project manager.
 
+## API consumed
+
+For this project **Open Meteo's free weather API** was used. You can visit its web site [here](https://open-meteo.com/). I strongly recommend to read its documentation, do it [here](https://open-meteo.com/). No sign up required, no API key is needed.
+
 ## Architecture
 
 This project follows the **Medallion Architecture**, and it is **containerized using Docker**.
