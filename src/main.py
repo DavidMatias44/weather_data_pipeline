@@ -1,7 +1,9 @@
 import logging
 from os import getenv
+from sys import exit
 
 from dotenv import load_dotenv
+from requests.exceptions import RequestException
 
 from extract import fetch_data
 
@@ -37,6 +39,10 @@ def main():
         print(raw_data)
     except ValueError as e:
         logger.error("Configuration error: %s", e)
+        exit(1)
+    except RequestException:
+        logger.exception("Error while fetching data from API")
+        exit(1)
 
 
 if __name__ == "__main__":
