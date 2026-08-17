@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from requests.exceptions import RequestException
 
 from extract import fetch_data
+from transform import flat_raw_data
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -36,9 +37,17 @@ def main():
         logger.info("Fetching data from API...")
         raw_data = fetch_data(url=base_url, params=params)
         logger.info("Success!")
-        print(raw_data)
+
+        logger.info("Flattening raw data...")
+        records = flat_raw_data(raw_data=raw_data)
+        logger.info("Success!")
+
+        print(records)
     except ValueError as e:
         logger.error("Configuration error: %s", e)
+        exit(1)
+    except KeyError as e:
+        logger.error("Dictionary key does not exists: %s", e)
         exit(1)
     except RequestException:
         logger.exception("Error while fetching data from API")
