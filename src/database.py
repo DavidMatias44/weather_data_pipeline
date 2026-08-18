@@ -6,7 +6,7 @@ from psycopg2.extensions import connection
 logger = logging.getLogger(__name__)
 
 
-def create_connection(params: dict[str, str]) -> connection:
+def create_connection(params: dict[str, str | int]) -> connection:
     logger.debug(
         "Establishing connection to database with host: %s, port: %s",
         params.get("host"),

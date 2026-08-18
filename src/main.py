@@ -1,11 +1,11 @@
 import logging
-from os import getenv
 from sys import exit
 
 import psycopg2
-from dotenv import load_dotenv
+from pydantic import ValidationError
 from requests.exceptions import RequestException
 
+from config import Settings
 from extract import fetch_data
 from load import insert_data
 from transform import flat_raw_data
@@ -16,35 +16,27 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def get_env_var(var_name: str) -> str:
-    value = getenv(var_name)
-    if value is None:
-        raise ValueError(f"Environment variable {var_name} not found.")
-    return value
-
-
 def main():
-    load_dotenv()
-
     try:
-        base_url = get_env_var("BASE_URL")
+        settings = Settings()
+
+        base_url = settings.base_url
         params = {
-            "latitude": get_env_var("LATITUDE"),
-            "longitude": get_env_var("LONGITUDE"),
-            "hourly": get_env_var("HOURLY"),
-            "timezone": get_env_var("TIMEZONE"),
-            "forecast_days": get_env_var("FORECAST_DAYS"),
+            "latitude": settings.latitude,
+            "longitude": settings.longitude,
+            "hourly": settings.hourly,
+            "timezone": settings.timezone,
+            "forecast_days": settings.forecast_days,
         }
 
         db_params = {
-            "dbname": get_env_var("DB_NAME"),
-            "user": get_env_var("DB_USER"),
-            "password": get_env_var("DB_PASSWORD"),
-            "host": get_env_var("DB_HOST"),
-            "port": get_env_var("DB_PORT"),
-
-            "schema": get_env_var("DB_SCHEMA"),
-            "raw_data_table": get_env_var("DB_RAW_DATA_TABLE"),
+            "dbname": settings.db_name,
+            "user": settings.db_user,
+            "password": settings.db_password,
+            "host": settings.db_host,
+            "port": settings.db_port,
+            "schema": settings.db_schema,
+            "raw_data_table": settings.db_raw_data_table,
         }
 
         logger.info("Fetching data from API...")
@@ -58,7 +50,7 @@ def main():
         logger.info("Inserting raw data...")
         insert_data(records=records, params=db_params)
         logger.info("Success!")
-    except ValueError as e:
+    except ValidationError as e:
         logger.error("Configuration error: %s", e)
         exit(1)
     except KeyError as e:
@@ -69,6 +61,9 @@ def main():
         exit(1)
     except psycopg2.Error:
         logger.exception("Database error")
+        exit(1)
+    except Exception:
+        logger.exception("Unexpected error: %s")
         exit(1)
 
 

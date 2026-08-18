@@ -5,7 +5,9 @@ from database import create_connection
 logger = logging.getLogger(__name__)
 
 
-def insert_data(params: dict[str, str], records: list[list[float | str | int]]) -> None:
+def insert_data(
+    params: dict[str, str | int], records: list[list[float | str | int]]
+) -> None:
     conn = create_connection(params)
     try:
         with conn:
