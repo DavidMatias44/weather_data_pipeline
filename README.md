@@ -29,3 +29,7 @@ This project follows the **Medallion Architecture**, and it is **containerized u
 To avoid *hardcoding* schema and table name in a SQL init file I decided to use a bash script instead. I faced a similar situation while I was working on [this script](https://github.com/DavidMatias44/sql_dwh_project/blob/main/scripts/bronze/run.sh) but in that case the command `sed` was used.
 
 After some research, I found [this Stack Overflow question](https://stackoverflow.com/questions/38800277/what-is-the-eosql-code-block-in-bash-when-running-sql) which helped me solve the issue using the `EOSQL` *limit string*.
+
+### API response data model
+
+I wanted to validate the format of the API response data as a best practice and correctly handle the weather data in subsequent processes. Pydantic models are a standard solution for archieving this. I learned how to use these models, from the basics to nested models [here](https://pydantic.dev/docs/validation/latest/concepts/models).
