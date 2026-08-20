@@ -63,7 +63,7 @@ def main():
         logger.exception("Database error")
         exit(1)
     except Exception:
-        logger.exception("Unexpected error: %s")
+        logger.exception("Unexpected error")
         exit(1)
 
 
