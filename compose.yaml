@@ -8,6 +8,30 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./init:/docker-entrypoint-initdb.d:ro
+    networks:
+      - wdp_network
+
+  airflow:
+    container_name: airflow_container
+    image: apache/airflow:3.0.0
+    ports:
+      - ${AIRFLOW_PORT}:8080
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_USER}:${AIRFLOW_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${AIRFLOW_DB}
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - db
+    command: >
+      bash -c "airflow db migrate && airflow standalone"
+    networks:
+      - wdp_network
 
 volumes:
   pgdata:
+
+networks:
+  wdp_network:
+    driver: bridge
