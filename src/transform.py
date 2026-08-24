@@ -1,6 +1,6 @@
 import logging
 
-from schemas import APIResponse
+from src.schemas import APIResponse
 
 logger = logging.getLogger(__name__)
 

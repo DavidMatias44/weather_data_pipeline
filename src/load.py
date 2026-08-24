@@ -1,6 +1,6 @@
 import logging
 
-from database import create_connection
+from src.database import create_connection
 
 logger = logging.getLogger(__name__)
 

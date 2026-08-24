@@ -5,10 +5,10 @@ import psycopg2
 from pydantic import ValidationError
 from requests.exceptions import RequestException
 
-from config import Settings
-from extract import fetch_data
-from load import insert_data
-from transform import flat_raw_data
+from src.config import Settings
+from src.extract import fetch_data
+from src.load import insert_data
+from src.transform import flat_raw_data
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"

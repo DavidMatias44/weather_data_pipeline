@@ -2,7 +2,7 @@ import logging
 
 from requests import get as requests_get
 
-from schemas import APIResponse
+from src.schemas import APIResponse
 
 logger = logging.getLogger(__name__)
 
