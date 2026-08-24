@@ -33,3 +33,19 @@ After some research, I found [this Stack Overflow question](https://stackoverflo
 ### API response data model
 
 I wanted to validate the format of the API response data as a best practice and correctly handle the weather data in subsequent processes. Pydantic models are a standard solution for archieving this. I learned how to use these models, from the basics to nested models [here](https://pydantic.dev/docs/validation/latest/concepts/models).
+
+### Dockerfile
+
+To orchestrate the ETL pipeline with **Apache Airflow**, the Airflow container must contain all the dependencies required by the `src/main.py` script. 
+
+1. The first step was to list all the dependencies:
+
+```
+uv pip freeze > requirements.txt
+```
+
+2. After that I created a custom Docker image using a Dockerfile. I defined the base image, installed the uv package manager and included the dependencies mentioned before.
+
+3. Finally, I had to modify the `compose.yaml` file to use this custom Docker image.
+
+I have done this before, but reading the official [Docker documentation](https://docs.docker.com/build/concepts/dockerfile/) helped me a lot.
