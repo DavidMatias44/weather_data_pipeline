@@ -6,6 +6,13 @@ dist/
 wheels/
 *.egg-info
 
+# dbt
+**/target/
+**/dbt_packages/
+**/logs
+**/.user.yml
+**/profiles.yml
+
 # Virtual environments
 .venv
 
