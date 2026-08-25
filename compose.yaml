@@ -31,6 +31,22 @@ services:
     networks:
       - wdp_network
 
+  dbt:
+    container_name: dbt_container
+    image: ghcr.io/dbt-labs/dbt-postgres:1.9.latest
+    env_file: .env
+    volumes:
+      - ./dbt/weather_data_pipeline:/usr/app
+      - ./dbt:/root/.dbt
+    working_dir: /usr/app
+    environment:
+      DBT_PROFILES_DIR: /root/.dbt
+    depends_on:
+      - db
+    networks:
+      - wdp_network
+    command: run
+
 volumes:
   pgdata:
 
