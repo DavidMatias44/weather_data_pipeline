@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('POSTGRES_DB') }}"
+    schema: "{{ env_var('POSTGRES_SCHEMA') }}"
+    tables:
+      - name: raw_data
+        identifier: "{{ env_var('POSTGRES_RAW_DATA_TABLE') }}"
+        columns:
+        - name: time
+        - name: latitude
+        - name: longitude
+        - name: elevation
+        - name: temperature
+        - name: precip_prob
+        - name: updated_at
