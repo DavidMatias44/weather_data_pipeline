@@ -40,7 +40,7 @@ To orchestrate the ETL pipeline with **Apache Airflow**, the Airflow container m
 
 1. The first step was to list all the dependencies:
 
-```
+```bash
 uv pip freeze > requirements.txt
 ```
 
@@ -49,3 +49,23 @@ uv pip freeze > requirements.txt
 3. Finally, I had to modify the `compose.yaml` file to use this custom Docker image.
 
 I have done this before, but reading the official [Docker documentation](https://docs.docker.com/build/concepts/dockerfile/) helped me a lot.
+
+### dbt setup
+
+A dbt project must be initialized. After some research, I found the following command to create a container to initialize the project and once it is done delete itself.
+
+```bash
+docker run --rm -it  -v "$(pwd)":/usr/app ghcr.io/dbt-labs/dbt-postgres:latest init weather_data_pipeline
+```
+
+I had some issues with directory permissions. So I executed this command to solve that:
+
+```bash
+sudo chown -R $(id -u):$(id -g) .
+```
+
+I ran the `dbt debug` command to ensure dbt was ready to use but it had problems finding the `profiles.yml` file. The solution was to create the file myself. The dbt documentation was really helpful, specifically:
+
+- [This one](https://docs.getdbt.com/docs/local/connect-data-platform/postgres-setup?version=2#profile-configuration) helped me to understand the content of the `profiles.yml` file.
+
+- And [this one](https://docs.getdbt.com/reference/dbt-jinja-functions/env_var?version=2#using-the-env-file) helped me properly use my `.env` file to avoid hardcoding some values in it.
