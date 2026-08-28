@@ -77,3 +77,9 @@ I ran the `dbt debug` command to ensure dbt was ready to use but it had problems
 The `models` directory follows the official dbt [structure and naming conventions](https://docs.getdbt.com/best-practices/how-we-structure/1-guide-overview?version=2). 
 
 The SQL code within these models is styled according to the dbt [SQL style guide](https://docs.getdbt.com/best-practices/how-we-style/2-how-we-style-our-sql?version=2).
+
+#### Orchestration
+
+The Cosmos package is used to orchestrate the dbt models. This packages simplifies considerably the setup and execution process for dbt workflows.
+
+The implementation follows the main steps described in this [Medium blog post](https://medium.com/@wajahatullah.k/running-dbt-on-postgresql-with-the-cosmos-package-airflow-904256044db1).
