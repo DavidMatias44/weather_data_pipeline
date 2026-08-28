@@ -50,7 +50,9 @@ uv pip freeze > requirements.txt
 
 I have done this before, but reading the official [Docker documentation](https://docs.docker.com/build/concepts/dockerfile/) helped me a lot.
 
-### dbt setup
+### dbt 
+
+#### Setup
 
 A dbt project must be initialized. After some research, I found the following command to create a container to initialize the project and once it is done delete itself.
 
@@ -69,3 +71,9 @@ I ran the `dbt debug` command to ensure dbt was ready to use but it had problems
 - [This one](https://docs.getdbt.com/docs/local/connect-data-platform/postgres-setup?version=2#profile-configuration) helped me to understand the content of the `profiles.yml` file.
 
 - And [this one](https://docs.getdbt.com/reference/dbt-jinja-functions/env_var?version=2#using-the-env-file) helped me properly use my `.env` file to avoid hardcoding some values in it.
+
+#### Models
+
+The `models` directory follows the official dbt [structure and naming conventions](https://docs.getdbt.com/best-practices/how-we-structure/1-guide-overview?version=2). 
+
+The SQL code within these models is styled according to the dbt [SQL style guide](https://docs.getdbt.com/best-practices/how-we-style/2-how-we-style-our-sql?version=2).
