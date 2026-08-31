@@ -13,4 +13,4 @@ airflow-pass:
 	docker compose logs airflow | grep "Password for user"
 
 clean:
-	docker compose down -v
+	docker compose down -v --remove-orphans

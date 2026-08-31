@@ -15,6 +15,64 @@ An end-to-end data pipeline for collecting, transforming, and orchestrating weat
 * **[uv](https://docs.astral.sh/uv/)** (v0.11+)
 * **[Make](https://www.gnu.org/software/make/)** (GNU Make v4.3+, optional)
 
+## Running the project
+
+The `make` utility is strongly recommended, although you can use native Docker Compose commands.
+
+### Option 1. Using Make
+
+* Starts the containers in the background.
+```bash
+make up
+```
+
+* Stops the containers.
+```bash
+make down
+```
+
+* Opens an interactive PostgreSQL session (it uses the PostgreSQL credentials from the `.env` file).
+```bash
+make psql
+```
+
+* Retrieve the Airflow password (it filters the Airflow logs)
+```bash
+make airflow-pass
+```
+
+* Stops the containers, remove volumes and orphans containers.
+```bash
+make clean
+```
+
+### Option 2. Using native commands
+
+* Starts the containers.
+```bash
+docker compose up -d
+```
+
+* Stops the containers.
+```bash
+docker compose down
+```
+
+* Opens an interactive PostgreSQL session.
+```bash
+docker exec -it postgres_container psql -U <POSTGRES_USER> -d <POSTGRES_DB>
+```
+
+* Retrieve the Airflow password.
+```bash
+docker compose logs airflow | grep "Password for user"
+```
+
+* Stops the containers, remove volumes and orphan containers.
+```bash
+docker compose down -v --remove-orphans
+```
+
 ## API consumed
 
 For this project **Open Meteo's free weather API** was used. You can visit its web site [here](https://open-meteo.com/). I strongly recommend to read its documentation, do it [here](https://open-meteo.com/). No sign up required, no API key is needed.
