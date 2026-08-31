@@ -32,6 +32,18 @@ services:
     networks:
       - wdp_network
 
+  metabase:
+    container_name: metabase_container
+    image: metabase/metabase
+    ports:
+      - ${METABASE_PORT}:3000
+    environment:
+      MB_JETTY_PORT: ${METABASE_PORT}
+    depends_on:
+      - db
+    networks:
+     - wdp_network
+
 volumes:
   pgdata:
 
