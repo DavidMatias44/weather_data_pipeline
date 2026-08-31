@@ -89,6 +89,12 @@ A diagram to visualize where the data came from, and how it *flows* through the 
 
 ![Data_Flow](docs/data_flow.png)
 
+## Orchestration
+
+Diagram to visualize how Airflow run every task.
+
+![Ochestration](docs/orchestration.png)
+
 ## Details
 
 ### Project database initialization
