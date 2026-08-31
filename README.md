@@ -10,7 +10,10 @@ An end-to-end data pipeline for collecting, transforming, and orchestrating weat
 
 ## Prerequisites
 
-- **uv**. Python package and project manager.
+* **[Docker](https://docs.docker.com/get-docker/)** (v29.7+)
+* **[Docker Compose](https://docs.docker.com/compose/install/)** (v5.5+)
+* **[uv](https://docs.astral.sh/uv/)** (v0.11+)
+* **[Make](https://www.gnu.org/software/make/)** (GNU Make v4.3+, optional)
 
 ## API consumed
 
