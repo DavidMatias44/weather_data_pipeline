@@ -22,6 +22,12 @@ This project follows the **Medallion Architecture**, and it is **containerized u
 
 ![Architecture](docs/architecture.png)
 
+## Data flow
+
+A diagram to visualize where the data came from, and how it *flows* through the different layers.
+
+![Data_Flow](docs/data_flow.png)
+
 ## Details
 
 ### Project database initialization
