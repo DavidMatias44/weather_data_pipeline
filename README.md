@@ -95,6 +95,12 @@ Diagram to visualize how Airflow run every task.
 
 ![Ochestration](docs/orchestration.png)
 
+### Dashboard
+
+I chose Metabase as the analytics tool due to its deployment simplicity with Docker. As a first-time user, I found the [official Metabase documentation](https://www.metabase.com/docs/latest/configuring-metabase/setting-up-metabase) very helpful.
+
+For more details check the [Dashboard documentation](docs/dashboard.md)
+
 ## Details
 
 ### Project database initialization
