@@ -1,0 +1,148 @@
+version: 2
+
+models:
+  - name: stg_weather_readings
+    columns:
+      - name: time
+        tests:
+          - unique
+          - not_null
+      - name: latitude
+        tests:
+          - not_null
+      - name: longitude
+        tests:
+          - not_null
+      - name: elevation
+        tests:
+          - not_null
+      - name: temperature
+        tests:
+          - not_null
+      - name: precip_prob
+        tests:
+          - not_null
+
+  - name: int_weather_enriched
+    columns:
+      - name: time
+        tests:
+          - unique
+          - not_null
+      - name: latitude
+        tests:
+          - not_null
+      - name: longitude
+        tests:
+          - not_null
+      - name: elevation
+        tests:
+          - not_null
+      - name: temp_categorized
+        tests:
+          - accepted_values:
+              arguments:
+                values: [
+                  'Frigid',
+                  'Freezing',
+                  'Very cold',
+                  'Cold',
+                  'Cool',
+                  'Comfortable',
+                  'Warm',
+                  'Hot',
+                  'Sweltering'
+                ]
+      - name: precip_prob
+        tests:
+          - not_null
+      - name: precip_prob_categorized
+        tests:
+          - accepted_values:
+              arguments:
+                values: [
+                  'None',
+                  'Low',
+                  'Moderate',
+                  'High',
+                  'Imminent'
+                ]
+
+  - name: today_weather_report
+    columns:
+      - name: hour
+        tests:
+          - unique
+          - not_null
+      - name: latitude
+        tests:
+          - not_null
+      - name: longitude
+        tests:
+          - not_null
+      - name: elevation
+        tests:
+          - not_null
+      - name: temp_categorized
+        tests:
+          - accepted_values:
+              arguments:
+                values: [
+                  'Frigid',
+                  'Freezing',
+                  'Very cold',
+                  'Cold',
+                  'Cool',
+                  'Comfortable',
+                  'Warm',
+                  'Hot',
+                  'Sweltering'
+                ]
+      - name: precip_prob
+        tests:
+          - not_null
+      - name: precip_prob_categorized
+        tests:
+          - accepted_values:
+              arguments:
+                values: [
+                  'None',
+                  'Low',
+                  'Moderate',
+                  'High',
+                  'Imminent'
+                ]
+
+  - name: week_weather_report
+    columns:
+      - name: date_day
+        tests:
+          - unique
+          - not_null
+      - name: latitude
+        tests:
+          - not_null
+      - name: longitude
+        tests:
+          - not_null
+      - name: elevation
+        tests:
+          - not_null
+      - name: avg_temperature
+        tests:
+          - not_null
+      - name: min_temperature
+        tests:
+          - not_null
+      - name: max_temperature
+        tests:
+          - not_null
+      - name: avg_precip_prob
+        tests:
+          - not_null
+      - name: min_precip_prob
+        tests:
+          - not_null
+      - name: max_precip_prob
+        tests:
+          - not_null
