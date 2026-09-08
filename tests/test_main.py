@@ -14,7 +14,7 @@ def test_main_success(
     mock_settings: MagicMock,
     mock_flat_raw_data: MagicMock,
     mock_fetch_data: MagicMock,
-    mock_insert_data: MagicMock
+    mock_insert_data: MagicMock,
 ) -> None:
     mock_settings_intance = MagicMock()
     mock_settings.return_value = mock_settings_intance
@@ -29,7 +29,9 @@ def test_main_success(
 
 @patch("src.main.Settings")
 def test_main_exits_on_validation_error(mock_settings: MagicMock) -> None:
-    mock_settings.side_effect = ValidationError.from_exception_data("Settings", line_errors=[])
+    mock_settings.side_effect = ValidationError.from_exception_data(
+        "Settings", line_errors=[]
+    )
 
     with raises(SystemExit) as exc_info:
         main()

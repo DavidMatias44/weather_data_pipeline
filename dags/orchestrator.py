@@ -1,9 +1,9 @@
-from datetime import datetime, timedelta
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 from airflow import DAG
 from airflow.providers.standard.operators.python import PythonOperator
-from cosmos import DbtTaskGroup, ProjectConfig, ProfileConfig, ExecutionConfig
+from cosmos import DbtTaskGroup, ExecutionConfig, ProfileConfig, ProjectConfig
 from cosmos.profiles import PostgresUserPasswordProfileMapping
 
 from src.main import main
@@ -15,14 +15,13 @@ profile_config = ProfileConfig(
     profile_name="weather_profile",
     target_name="dev",
     profile_mapping=PostgresUserPasswordProfileMapping(
-        conn_id="postgres_conn",
-        profile_args={"dbname": "db", "schema": "wdp"}
+        conn_id="postgres_conn", profile_args={"dbname": "db", "schema": "wdp"}
     ),
 )
 
 with DAG(
     dag_id="wdp_orchestrator",
-    start_date=datetime(year=2026, month=8, day=20),
+    start_date=datetime(year=2026, month=8, day=20, tzinfo=UTC),
     schedule=timedelta(hours=1),
 ) as dag:
     task1 = PythonOperator(task_id="ETL_process", python_callable=main)

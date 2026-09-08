@@ -12,16 +12,12 @@ def test_create_connection_success(mock_connect: MagicMock) -> None:
         "user": "user",
         "password": "pass",
         "host": "localhost",
-        "port": 5432
+        "port": 5432,
     }
 
     result = create_connection(params=test_params)
 
     mock_connect.assert_called_once_with(
-        dbname="db",
-        user="user",
-        password="pass",
-        host="localhost",
-        port=5432
+        dbname="db", user="user", password="pass", host="localhost", port=5432
     )
     assert result == mock_conn
