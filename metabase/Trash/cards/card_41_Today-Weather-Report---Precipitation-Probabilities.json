@@ -1,0 +1,211 @@
+{
+  "cache_invalidated_at": "2026-09-10T19:21:47.901814Z",
+  "description": null,
+  "archived": true,
+  "view_count": 0,
+  "collection_position": null,
+  "source_card_id": null,
+  "table_id": 12,
+  "can_run_adhoc_query": true,
+  "result_metadata": [
+    {
+      "database_type": "int2",
+      "semantic_type": null,
+      "table_id": 12,
+      "lib/deduplicated-name": "precip_prob",
+      "lib/original-name": "precip_prob",
+      "name": "precip_prob",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "precip_prob",
+      "lib/original-display-name": "Precip Prob",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        107,
+        null
+      ],
+      "effective_type": "type/Integer",
+      "active": true,
+      "id": 107,
+      "lib/desired-column-alias": "precip_prob",
+      "position": 5,
+      "visibility_type": "normal",
+      "display_name": "Precip Prob",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 14,
+          "nil%": 0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": 1.129323780149694,
+            "min": 0,
+            "q1": 0,
+            "q3": 8,
+            "excess-kurtosis": -0.14355623064977108,
+            "zero-fraction": 0.2916666666666667,
+            "mode-fraction": 0.2916666666666667,
+            "top-3-fraction": 0.5,
+            "max": 24,
+            "sd": 8.182253684793624,
+            "avg": 6.916666666666667
+          }
+        }
+      },
+      "base_type": "type/Integer"
+    },
+    {
+      "database_type": "text",
+      "semantic_type": "type/Category",
+      "table_id": 12,
+      "lib/deduplicated-name": "hour_",
+      "lib/original-name": "hour_",
+      "name": "hour_",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "hour_",
+      "lib/original-display-name": "Hour",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        109,
+        null
+      ],
+      "effective_type": "type/Text",
+      "active": true,
+      "id": 109,
+      "lib/desired-column-alias": "hour_",
+      "position": 7,
+      "visibility_type": "normal",
+      "display_name": "Hour",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 24,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 0,
+            "percent-state": 0,
+            "percent-blank": 0,
+            "average-length": 5,
+            "mode-fraction": 0.041666666666666664,
+            "top-3-fraction": 0.125
+          }
+        }
+      },
+      "base_type": "type/Text"
+    }
+  ],
+  "embedding_type": null,
+  "creator": {
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "is_data_analyst": false,
+    "last_login": "2026-09-10T19:39:32.084385Z",
+    "is_qbnewb": false,
+    "is_superuser": true,
+    "id": 1,
+    "last_name": "Matias",
+    "tenant_id": null,
+    "date_joined": "2026-09-10T19:17:29.703487Z",
+    "common_name": "David Matias"
+  },
+  "initially_published_at": null,
+  "can_write": true,
+  "card_schema": 23,
+  "database_id": 2,
+  "enable_embedding": false,
+  "collection_id": 1,
+  "query_type": "query",
+  "name": "Today Weather Report - Precipitation Probabilities",
+  "last_query_start": null,
+  "is_remote_synced": false,
+  "dashboard_count": 0,
+  "document_id": null,
+  "last_used_at": "2026-09-10T19:21:31.284063Z",
+  "dashboard": null,
+  "type": "question",
+  "dimensions": null,
+  "average_query_time": null,
+  "creator_id": 1,
+  "can_restore": true,
+  "moderation_reviews": [],
+  "updated_at": "2026-09-10T19:21:47.908559Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "dataset_query": {
+    "lib/type": "mbql/query",
+    "database": 2,
+    "stages": [
+      {
+        "lib/type": "mbql.stage/mbql",
+        "source-table": 12,
+        "fields": [
+          [
+            "field",
+            {
+              "lib/uuid": "392f43f5-dffa-4bd6-be9d-6c1b483cd719",
+              "effective-type": "type/Integer",
+              "base-type": "type/Integer"
+            },
+            107
+          ],
+          [
+            "field",
+            {
+              "lib/uuid": "6cea99c1-3b61-4235-99ba-fe8060f767f2",
+              "effective-type": "type/Text",
+              "base-type": "type/Text"
+            },
+            109
+          ]
+        ]
+      }
+    ]
+  },
+  "dimension_mappings": null,
+  "id": 41,
+  "legacy_query": null,
+  "parameter_mappings": [],
+  "can_manage_db": true,
+  "display": "line",
+  "archived_directly": true,
+  "entity_id": "M4wZw9nswJikSgYbHlln7",
+  "param_fields": {},
+  "collection_preview": true,
+  "last-edit-info": {
+    "id": 1,
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "last_name": "Matias",
+    "timestamp": "2026-09-10T19:21:47.938818Z"
+  },
+  "visualization_settings": {
+    "graph.x_axis.scale": "ordinal",
+    "graph.dimensions": [
+      "hour_"
+    ],
+    "graph.metrics": [
+      "precip_prob"
+    ]
+  },
+  "collection": {
+    "metabase.collections.models.collection.root/is-root?": true,
+    "authority_level": null,
+    "name": "Our analytics",
+    "is_personal": false,
+    "id": "root",
+    "is_remote_synced": false,
+    "can_write": true
+  },
+  "metabase_version": "v0.63.1.4 (9bd2d23)",
+  "parameters": [],
+  "dashboard_id": null,
+  "created_at": "2026-09-10T19:21:31.284063Z",
+  "parameter_usage_count": 0,
+  "public_uuid": null,
+  "can_delete": true
+}

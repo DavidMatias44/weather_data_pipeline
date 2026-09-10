@@ -1,0 +1,225 @@
+{
+  "cache_invalidated_at": null,
+  "description": null,
+  "archived": false,
+  "view_count": 10,
+  "collection_position": null,
+  "source_card_id": null,
+  "table_id": 12,
+  "can_run_adhoc_query": true,
+  "result_metadata": [
+    {
+      "database_type": "int2",
+      "semantic_type": null,
+      "table_id": 12,
+      "lib/deduplicated-name": "precip_prob",
+      "lib/original-name": "precip_prob",
+      "name": "precip_prob",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "precip_prob",
+      "lib/original-display-name": "Precip Prob",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        107,
+        null
+      ],
+      "effective_type": "type/Integer",
+      "active": true,
+      "id": 107,
+      "lib/desired-column-alias": "precip_prob",
+      "position": 5,
+      "visibility_type": "normal",
+      "display_name": "Precip Prob",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 14,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": 1.129323780149694,
+            "min": 0.0,
+            "q1": 0.0,
+            "q3": 8.0,
+            "excess-kurtosis": -0.14355623064977108,
+            "zero-fraction": 0.2916666666666667,
+            "mode-fraction": 0.2916666666666667,
+            "top-3-fraction": 0.5,
+            "max": 24.0,
+            "sd": 8.182253684793624,
+            "avg": 6.916666666666667
+          }
+        }
+      },
+      "base_type": "type/Integer"
+    },
+    {
+      "database_type": "text",
+      "semantic_type": "type/Category",
+      "table_id": 12,
+      "lib/deduplicated-name": "hour_",
+      "lib/original-name": "hour_",
+      "name": "hour_",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "hour_",
+      "lib/original-display-name": "Hour",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        109,
+        null
+      ],
+      "effective_type": "type/Text",
+      "active": true,
+      "id": 109,
+      "lib/desired-column-alias": "hour_",
+      "position": 7,
+      "visibility_type": "normal",
+      "display_name": "Hour",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 24,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0.0,
+            "percent-url": 0.0,
+            "percent-email": 0.0,
+            "percent-state": 0.0,
+            "percent-blank": 0.0,
+            "average-length": 5.0,
+            "mode-fraction": 0.041666666666666664,
+            "top-3-fraction": 0.125
+          }
+        }
+      },
+      "base_type": "type/Text"
+    }
+  ],
+  "embedding_type": null,
+  "creator": {
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "is_data_analyst": false,
+    "last_login": "2026-09-10T19:39:32.084385Z",
+    "is_qbnewb": false,
+    "is_superuser": true,
+    "id": 1,
+    "last_name": "Matias",
+    "tenant_id": null,
+    "date_joined": "2026-09-10T19:17:29.703487Z",
+    "common_name": "David Matias"
+  },
+  "initially_published_at": null,
+  "can_write": true,
+  "card_schema": 23,
+  "database_id": 2,
+  "enable_embedding": false,
+  "collection_id": 6,
+  "query_type": "query",
+  "name": "Today Weather Report - Precipitation Probabilities",
+  "last_query_start": "2026-09-10T19:39:21.812984Z",
+  "is_remote_synced": false,
+  "dashboard_count": 1,
+  "document_id": null,
+  "last_used_at": "2026-09-10T19:38:49.881232Z",
+  "dashboard": {
+    "name": "Weather Report",
+    "id": 2,
+    "moderation_status": null
+  },
+  "type": "question",
+  "dimensions": null,
+  "average_query_time": 25.454545454545453,
+  "creator_id": 1,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2026-09-10T19:38:26.201843Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "dataset_query": {
+    "lib/type": "mbql/query",
+    "database": 2,
+    "stages": [
+      {
+        "lib/type": "mbql.stage/mbql",
+        "source-table": 12,
+        "fields": [
+          [
+            "field",
+            {
+              "lib/uuid": "cb666191-d15a-4cca-8497-3d7f61b50d07",
+              "effective-type": "type/Integer",
+              "base-type": "type/Integer"
+            },
+            107
+          ],
+          [
+            "field",
+            {
+              "lib/uuid": "6951d8e9-4d73-49b7-acd5-30deb2ad947c",
+              "effective-type": "type/Text",
+              "base-type": "type/Text"
+            },
+            109
+          ]
+        ]
+      }
+    ]
+  },
+  "dimension_mappings": null,
+  "id": 42,
+  "legacy_query": null,
+  "parameter_mappings": [],
+  "can_manage_db": true,
+  "display": "line",
+  "archived_directly": false,
+  "entity_id": "Rf9stJVZCqgYVdFTaNZlC",
+  "param_fields": {},
+  "collection_preview": true,
+  "last-edit-info": {
+    "id": 1,
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "last_name": "Matias",
+    "timestamp": "2026-09-10T19:22:16.149992Z"
+  },
+  "visualization_settings": {
+    "graph.x_axis.scale": "ordinal",
+    "graph.dimensions": [
+      "hour_"
+    ],
+    "graph.metrics": [
+      "precip_prob"
+    ]
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "weather_report",
+    "archive_operation_id": null,
+    "name": "Weather Report",
+    "is_remote_synced": false,
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "id": 6,
+    "archived_directly": null,
+    "entity_id": "xSBhLj9qD9DWNsB4P8cfe",
+    "location": "/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2026-09-10T19:38:07.508625Z"
+  },
+  "metabase_version": "v0.63.1.4 (9bd2d23)",
+  "parameters": [],
+  "dashboard_id": 2,
+  "created_at": "2026-09-10T19:22:16.128892Z",
+  "parameter_usage_count": 0,
+  "public_uuid": null,
+  "can_delete": false
+}

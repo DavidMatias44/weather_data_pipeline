@@ -1,0 +1,149 @@
+{
+  "cache_invalidated_at": null,
+  "description": null,
+  "archived": false,
+  "view_count": 6,
+  "collection_position": null,
+  "source_card_id": null,
+  "table_id": null,
+  "can_run_adhoc_query": true,
+  "result_metadata": [
+    {
+      "database_type": "text",
+      "semantic_type": null,
+      "lib/deduplicated-name": "temp_categorized",
+      "lib/original-name": "temp_categorized",
+      "name": "temp_categorized",
+      "lib/source": "source/native",
+      "lib/source-column-alias": "temp_categorized",
+      "source": "native",
+      "field_ref": [
+        "field",
+        "temp_categorized",
+        {
+          "base-type": "type/Text"
+        }
+      ],
+      "effective_type": "type/Text",
+      "lib/desired-column-alias": "temp_categorized",
+      "display_name": "temp_categorized",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 1,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0.0,
+            "percent-url": 0.0,
+            "percent-email": 0.0,
+            "percent-state": 0.0,
+            "percent-blank": 0.0,
+            "average-length": 4.0,
+            "mode-fraction": 1.0,
+            "top-3-fraction": 1.0
+          }
+        }
+      },
+      "base_type": "type/Text"
+    }
+  ],
+  "embedding_type": null,
+  "creator": {
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "is_data_analyst": false,
+    "last_login": "2026-09-10T19:39:32.084385Z",
+    "is_qbnewb": false,
+    "is_superuser": true,
+    "id": 1,
+    "last_name": "Matias",
+    "tenant_id": null,
+    "date_joined": "2026-09-10T19:17:29.703487Z",
+    "common_name": "David Matias"
+  },
+  "initially_published_at": null,
+  "can_write": true,
+  "card_schema": 23,
+  "database_id": 2,
+  "enable_embedding": false,
+  "collection_id": 6,
+  "query_type": "native",
+  "name": "Current Thermal Sensation",
+  "last_query_start": "2026-09-10T19:39:21.814704Z",
+  "is_remote_synced": false,
+  "dashboard_count": 1,
+  "document_id": null,
+  "last_used_at": "2026-09-10T19:38:49.881232Z",
+  "dashboard": {
+    "name": "Weather Report",
+    "id": 2,
+    "moderation_status": null
+  },
+  "type": "question",
+  "dimensions": null,
+  "average_query_time": 13.142857142857142,
+  "creator_id": 1,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2026-09-10T19:38:26.201843Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "dataset_query": {
+    "lib/type": "mbql/query",
+    "database": 2,
+    "stages": [
+      {
+        "native": "SELECT\n\ttemp_categorized\nFROM wdp.today_weather_report\nWHERE hour_ < TO_CHAR((CURRENT_TIMESTAMP AT TIME ZONE 'America/Denver'), 'HH24:MI')\nORDER BY hour_ DESC\nLIMIT 1;\n",
+        "lib/type": "mbql.stage/native"
+      }
+    ]
+  },
+  "dimension_mappings": null,
+  "id": 46,
+  "legacy_query": null,
+  "parameter_mappings": [],
+  "can_manage_db": true,
+  "display": "scalar",
+  "archived_directly": false,
+  "entity_id": "ZaNlTwckGFlvJD42CPwzy",
+  "param_fields": {},
+  "collection_preview": true,
+  "last-edit-info": {
+    "id": 1,
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "last_name": "Matias",
+    "timestamp": "2026-09-10T19:27:02.809612Z"
+  },
+  "visualization_settings": {
+    "scalar.segments": []
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "weather_report",
+    "archive_operation_id": null,
+    "name": "Weather Report",
+    "is_remote_synced": false,
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "id": 6,
+    "archived_directly": null,
+    "entity_id": "xSBhLj9qD9DWNsB4P8cfe",
+    "location": "/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2026-09-10T19:38:07.508625Z"
+  },
+  "metabase_version": "v0.63.1.4 (9bd2d23)",
+  "parameters": [],
+  "dashboard_id": 2,
+  "created_at": "2026-09-10T19:27:02.78285Z",
+  "parameter_usage_count": 0,
+  "public_uuid": null,
+  "can_delete": false
+}

@@ -1,0 +1,206 @@
+{
+  "summary": {
+    "collections": {
+      "created": 1,
+      "updated": 0,
+      "skipped": 1,
+      "failed": 0
+    },
+    "cards": {
+      "created": 7,
+      "updated": 0,
+      "skipped": 0,
+      "failed": 0
+    },
+    "dashboards": {
+      "created": 1,
+      "updated": 0,
+      "skipped": 0,
+      "failed": 0
+    }
+  },
+  "results": [
+    {
+      "entity_type": "collection",
+      "status": "skipped",
+      "source_id": 1,
+      "target_id": 1,
+      "name": "Trash",
+      "reason": "Already exists (skipped)",
+      "error_message": "Already exists (skipped)"
+    },
+    {
+      "entity_type": "collection",
+      "status": "created",
+      "source_id": 6,
+      "target_id": 5,
+      "name": "Weather Report",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 40,
+      "target_id": 40,
+      "name": "Today Weather Report - Temperatures",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 42,
+      "target_id": 41,
+      "name": "Today Weather Report - Precipitation Probabilities",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 43,
+      "target_id": 42,
+      "name": "Week Weather Report - Temperatures",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 44,
+      "target_id": 43,
+      "name": "Week Weather Report - Precipitations",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 45,
+      "target_id": 44,
+      "name": "Current Temperature",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 46,
+      "target_id": 45,
+      "name": "Current Thermal Sensation",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 47,
+      "target_id": 46,
+      "name": "Current Precipitation Probability",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "dashboard",
+      "status": "created",
+      "source_id": 2,
+      "target_id": 2,
+      "name": "Weather Report",
+      "reason": null,
+      "error_message": null
+    }
+  ],
+  "items": [
+    {
+      "entity_type": "collection",
+      "status": "skipped",
+      "source_id": 1,
+      "target_id": 1,
+      "name": "Trash",
+      "reason": "Already exists (skipped)",
+      "error_message": "Already exists (skipped)"
+    },
+    {
+      "entity_type": "collection",
+      "status": "created",
+      "source_id": 6,
+      "target_id": 5,
+      "name": "Weather Report",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 40,
+      "target_id": 40,
+      "name": "Today Weather Report - Temperatures",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 42,
+      "target_id": 41,
+      "name": "Today Weather Report - Precipitation Probabilities",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 43,
+      "target_id": 42,
+      "name": "Week Weather Report - Temperatures",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 44,
+      "target_id": 43,
+      "name": "Week Weather Report - Precipitations",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 45,
+      "target_id": 44,
+      "name": "Current Temperature",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 46,
+      "target_id": 45,
+      "name": "Current Thermal Sensation",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "card",
+      "status": "created",
+      "source_id": 47,
+      "target_id": 46,
+      "name": "Current Precipitation Probability",
+      "reason": null,
+      "error_message": null
+    },
+    {
+      "entity_type": "dashboard",
+      "status": "created",
+      "source_id": 2,
+      "target_id": 2,
+      "name": "Weather Report",
+      "reason": null,
+      "error_message": null
+    }
+  ]
+}

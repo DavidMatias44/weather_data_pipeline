@@ -1,0 +1,1566 @@
+{
+  "description": null,
+  "archived": false,
+  "view_count": 36,
+  "collection_position": null,
+  "dashcards": [
+    {
+      "size_x": 22,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 12,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 12,
+        "result_metadata": [
+          {
+            "database_type": "text",
+            "semantic_type": "type/Category",
+            "table_id": 12,
+            "lib/deduplicated-name": "hour_",
+            "lib/original-name": "hour_",
+            "name": "hour_",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "hour_",
+            "lib/original-display-name": "Hour",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              109,
+              null
+            ],
+            "effective_type": "type/Text",
+            "active": true,
+            "id": 109,
+            "lib/desired-column-alias": "hour_",
+            "position": 7,
+            "visibility_type": "normal",
+            "display_name": "Hour",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 24,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "percent-blank": 0.0,
+                  "average-length": 5.0,
+                  "mode-fraction": 0.041666666666666664,
+                  "top-3-fraction": 0.125
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "database_type": "float4",
+            "semantic_type": null,
+            "table_id": 12,
+            "lib/deduplicated-name": "temperature",
+            "lib/original-name": "temperature",
+            "name": "temperature",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "temperature",
+            "lib/original-display-name": "Temperature",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              105,
+              null
+            ],
+            "effective_type": "type/Float",
+            "active": true,
+            "id": 105,
+            "lib/desired-column-alias": "temperature",
+            "position": 3,
+            "visibility_type": "normal",
+            "display_name": "Temperature",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 22,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": 0.29985879390955383,
+                  "min": 16.100000381469727,
+                  "q1": 16.5,
+                  "q3": 24.299999237060547,
+                  "excess-kurtosis": -1.4815074371340444,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.125,
+                  "top-3-fraction": 0.20833333333333334,
+                  "max": 27.299999237060547,
+                  "sd": 4.112756395738994,
+                  "avg": 20.945833285649616
+                }
+              }
+            },
+            "base_type": "type/Float"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 6,
+        "query_type": "query",
+        "download_perms": "full",
+        "name": "Today Weather Report - Temperatures",
+        "document_id": null,
+        "last_used_at": "2026-09-10T19:38:49.881232Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 42,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-09-10T19:38:26.201843Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "lib/type": "mbql.stage/mbql",
+              "source-table": 12,
+              "fields": [
+                [
+                  "field",
+                  {
+                    "lib/uuid": "0bc44f5b-57a8-46a4-ab8e-6f97a349a587",
+                    "effective-type": "type/Text",
+                    "base-type": "type/Text"
+                  },
+                  109
+                ],
+                [
+                  "field",
+                  {
+                    "effective-type": "type/Float",
+                    "lib/uuid": "db162688-e5e2-4c5f-b756-60df1f0f969a",
+                    "base-type": "type/Float"
+                  },
+                  105
+                ]
+              ]
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 40,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "line",
+        "archived_directly": false,
+        "entity_id": "WnGonPUvSKDtGHt-3yfPc",
+        "collection_preview": true,
+        "visualization_settings": {
+          "graph.x_axis.scale": "ordinal",
+          "graph.dimensions": [
+            "hour_"
+          ],
+          "graph.metrics": [
+            "temperature"
+          ]
+        },
+        "metabase_version": "v0.63.1.4 (9bd2d23)",
+        "parameters": [],
+        "dashboard_id": 2,
+        "created_at": "2026-09-10T19:20:34.098604Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 1,
+      "id": 37,
+      "parameter_mappings": [],
+      "card_id": 40,
+      "entity_id": "kbOJ08p3a_Q8gIbkkN0bY",
+      "visualization_settings": {},
+      "size_y": 12,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:20:34.112393Z",
+      "row": 6
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "query_average_duration": null,
+        "download_perms": "none"
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 0,
+      "id": 38,
+      "parameter_mappings": [],
+      "card_id": null,
+      "entity_id": "mdTnAluQs544ZaxofQUyE",
+      "visualization_settings": {
+        "dashcard.background": false,
+        "virtual_card": {
+          "name": null,
+          "display": "heading",
+          "visualization_settings": {},
+          "archived": false
+        }
+      },
+      "size_y": 1,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:21:00.447243Z",
+      "row": 5
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "query_average_duration": null,
+        "download_perms": "none"
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 0,
+      "id": 39,
+      "parameter_mappings": [],
+      "card_id": null,
+      "entity_id": "YwT534z-KMJU4hdBEC8AZ",
+      "visualization_settings": {
+        "dashcard.background": false,
+        "virtual_card": {
+          "name": null,
+          "display": "heading",
+          "visualization_settings": {},
+          "archived": false
+        }
+      },
+      "size_y": 1,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:21:00.447243Z",
+      "row": 18
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "query_average_duration": null,
+        "download_perms": "none"
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 0,
+      "id": 40,
+      "parameter_mappings": [],
+      "card_id": null,
+      "entity_id": "bQsDyxYlJ8YPQlqTdUHX2",
+      "visualization_settings": {
+        "dashcard.background": false,
+        "virtual_card": {
+          "name": null,
+          "display": "heading",
+          "visualization_settings": {},
+          "archived": false
+        }
+      },
+      "size_y": 1,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:21:00.447243Z",
+      "row": 31
+    },
+    {
+      "size_x": 22,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 10,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 12,
+        "result_metadata": [
+          {
+            "database_type": "int2",
+            "semantic_type": null,
+            "table_id": 12,
+            "lib/deduplicated-name": "precip_prob",
+            "lib/original-name": "precip_prob",
+            "name": "precip_prob",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "precip_prob",
+            "lib/original-display-name": "Precip Prob",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              107,
+              null
+            ],
+            "effective_type": "type/Integer",
+            "active": true,
+            "id": 107,
+            "lib/desired-column-alias": "precip_prob",
+            "position": 5,
+            "visibility_type": "normal",
+            "display_name": "Precip Prob",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 14,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": 1.129323780149694,
+                  "min": 0.0,
+                  "q1": 0.0,
+                  "q3": 8.0,
+                  "excess-kurtosis": -0.14355623064977108,
+                  "zero-fraction": 0.2916666666666667,
+                  "mode-fraction": 0.2916666666666667,
+                  "top-3-fraction": 0.5,
+                  "max": 24.0,
+                  "sd": 8.182253684793624,
+                  "avg": 6.916666666666667
+                }
+              }
+            },
+            "base_type": "type/Integer"
+          },
+          {
+            "database_type": "text",
+            "semantic_type": "type/Category",
+            "table_id": 12,
+            "lib/deduplicated-name": "hour_",
+            "lib/original-name": "hour_",
+            "name": "hour_",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "hour_",
+            "lib/original-display-name": "Hour",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              109,
+              null
+            ],
+            "effective_type": "type/Text",
+            "active": true,
+            "id": 109,
+            "lib/desired-column-alias": "hour_",
+            "position": 7,
+            "visibility_type": "normal",
+            "display_name": "Hour",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 24,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "percent-blank": 0.0,
+                  "average-length": 5.0,
+                  "mode-fraction": 0.041666666666666664,
+                  "top-3-fraction": 0.125
+                }
+              }
+            },
+            "base_type": "type/Text"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 6,
+        "query_type": "query",
+        "download_perms": "full",
+        "name": "Today Weather Report - Precipitation Probabilities",
+        "document_id": null,
+        "last_used_at": "2026-09-10T19:38:49.881232Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 17,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-09-10T19:38:26.201843Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "lib/type": "mbql.stage/mbql",
+              "source-table": 12,
+              "fields": [
+                [
+                  "field",
+                  {
+                    "lib/uuid": "cb666191-d15a-4cca-8497-3d7f61b50d07",
+                    "effective-type": "type/Integer",
+                    "base-type": "type/Integer"
+                  },
+                  107
+                ],
+                [
+                  "field",
+                  {
+                    "lib/uuid": "6951d8e9-4d73-49b7-acd5-30deb2ad947c",
+                    "effective-type": "type/Text",
+                    "base-type": "type/Text"
+                  },
+                  109
+                ]
+              ]
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 42,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "line",
+        "archived_directly": false,
+        "entity_id": "Rf9stJVZCqgYVdFTaNZlC",
+        "collection_preview": true,
+        "visualization_settings": {
+          "graph.x_axis.scale": "ordinal",
+          "graph.dimensions": [
+            "hour_"
+          ],
+          "graph.metrics": [
+            "precip_prob"
+          ]
+        },
+        "metabase_version": "v0.63.1.4 (9bd2d23)",
+        "parameters": [],
+        "dashboard_id": 2,
+        "created_at": "2026-09-10T19:22:16.128892Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 1,
+      "id": 41,
+      "parameter_mappings": [],
+      "card_id": 42,
+      "entity_id": "xwGC_i58g0FzRlSPo2wj7",
+      "visualization_settings": {},
+      "size_y": 12,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:22:16.13667Z",
+      "row": 19
+    },
+    {
+      "size_x": 22,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 9,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 13,
+        "result_metadata": [
+          {
+            "database_type": "date",
+            "semantic_type": null,
+            "table_id": 13,
+            "lib/deduplicated-name": "date_day",
+            "lib/original-name": "date_day",
+            "name": "date_day",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "date_day",
+            "lib/original-display-name": "Date Day",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              110,
+              null
+            ],
+            "effective_type": "type/Date",
+            "active": true,
+            "id": 110,
+            "lib/desired-column-alias": "date_day",
+            "position": 0,
+            "visibility_type": "normal",
+            "display_name": "Date Day",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 7,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2026-09-10",
+                  "latest": "2026-09-16",
+                  "mode-fraction": 0.14285714285714285,
+                  "top-3-fraction": 0.42857142857142855
+                }
+              }
+            },
+            "base_type": "type/Date"
+          },
+          {
+            "database_type": "numeric",
+            "semantic_type": null,
+            "table_id": 13,
+            "lib/deduplicated-name": "avg_temperature",
+            "lib/original-name": "avg_temperature",
+            "name": "avg_temperature",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "avg_temperature",
+            "lib/original-display-name": "Avg Temperature",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              114,
+              null
+            ],
+            "effective_type": "type/Decimal",
+            "active": true,
+            "id": 114,
+            "lib/desired-column-alias": "avg_temperature",
+            "position": 4,
+            "visibility_type": "normal",
+            "display_name": "Avg Temperature",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 7,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": -0.9582714682739513,
+                  "min": 19.43,
+                  "q1": 20.13,
+                  "q3": 20.59,
+                  "excess-kurtosis": 1.432057407247017,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.14285714285714285,
+                  "top-3-fraction": 0.42857142857142855,
+                  "max": 20.95,
+                  "sd": 0.4856610615096361,
+                  "avg": 20.330000000000002
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "database_type": "float4",
+            "semantic_type": null,
+            "table_id": 13,
+            "lib/deduplicated-name": "min_temperature",
+            "lib/original-name": "min_temperature",
+            "name": "min_temperature",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "min_temperature",
+            "lib/original-display-name": "Min Temperature",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              115,
+              null
+            ],
+            "effective_type": "type/Float",
+            "active": true,
+            "id": 115,
+            "lib/desired-column-alias": "min_temperature",
+            "position": 5,
+            "visibility_type": "normal",
+            "display_name": "Min Temperature",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 7,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": 0.01686458696430421,
+                  "min": 14.800000190734863,
+                  "q1": 15.100000381469727,
+                  "q3": 16.100000381469727,
+                  "excess-kurtosis": -1.9966330499980995,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.14285714285714285,
+                  "top-3-fraction": 0.42857142857142855,
+                  "max": 16.200000762939453,
+                  "sd": 0.5533449652583708,
+                  "avg": 15.54285730634417
+                }
+              }
+            },
+            "base_type": "type/Float"
+          },
+          {
+            "database_type": "float4",
+            "semantic_type": null,
+            "table_id": 13,
+            "lib/deduplicated-name": "max_temperature",
+            "lib/original-name": "max_temperature",
+            "name": "max_temperature",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "max_temperature",
+            "lib/original-display-name": "Max Temperature",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              116,
+              null
+            ],
+            "effective_type": "type/Float",
+            "active": true,
+            "id": 116,
+            "lib/desired-column-alias": "max_temperature",
+            "position": 6,
+            "visibility_type": "normal",
+            "display_name": "Max Temperature",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 6,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": -1.244159367465152,
+                  "min": 25.200000762939453,
+                  "q1": 26.899999618530273,
+                  "q3": 27.600000381469727,
+                  "excess-kurtosis": 2.7896125253335775,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.2857142857142857,
+                  "top-3-fraction": 0.5714285714285714,
+                  "max": 28.399999618530273,
+                  "sd": 0.989708675697463,
+                  "avg": 27.142857142857142
+                }
+              }
+            },
+            "base_type": "type/Float"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 6,
+        "query_type": "query",
+        "download_perms": "full",
+        "name": "Week Weather Report - Temperatures",
+        "document_id": null,
+        "last_used_at": "2026-09-10T19:38:49.881232Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 32,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-09-10T19:38:26.201843Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "lib/type": "mbql.stage/mbql",
+              "source-table": 13,
+              "fields": [
+                [
+                  "field",
+                  {
+                    "lib/uuid": "772efdbb-f40c-4118-a2c6-de0ec4e6acb5",
+                    "effective-type": "type/Date",
+                    "base-type": "type/Date"
+                  },
+                  110
+                ],
+                [
+                  "field",
+                  {
+                    "lib/uuid": "72bdc32b-ecba-49b0-b449-df920a82bc07",
+                    "effective-type": "type/Decimal",
+                    "base-type": "type/Decimal"
+                  },
+                  114
+                ],
+                [
+                  "field",
+                  {
+                    "lib/uuid": "cae6244b-f0f1-4911-91a7-12c0461e3c1b",
+                    "effective-type": "type/Float",
+                    "base-type": "type/Float"
+                  },
+                  115
+                ],
+                [
+                  "field",
+                  {
+                    "lib/uuid": "a1b9611d-82e2-4d0a-9c7d-7cb5e7497e12",
+                    "effective-type": "type/Float",
+                    "base-type": "type/Float"
+                  },
+                  116
+                ]
+              ]
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 43,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "line",
+        "archived_directly": false,
+        "entity_id": "7NQxfKVuqfhJvewYCZNXp",
+        "collection_preview": true,
+        "visualization_settings": {
+          "graph.dimensions": [
+            "date_day"
+          ],
+          "graph.x_axis.scale": "timeseries",
+          "graph.metrics": [
+            "max_temperature",
+            "avg_temperature",
+            "min_temperature"
+          ]
+        },
+        "metabase_version": "v0.63.1.4 (9bd2d23)",
+        "parameters": [],
+        "dashboard_id": 2,
+        "created_at": "2026-09-10T19:23:46.166673Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 1,
+      "id": 42,
+      "parameter_mappings": [],
+      "card_id": 43,
+      "entity_id": "H0OxzTja3Wu-n0Y4PjySx",
+      "visualization_settings": {},
+      "size_y": 12,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:23:46.175747Z",
+      "row": 32
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "query_average_duration": null,
+        "download_perms": "none"
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 0,
+      "id": 43,
+      "parameter_mappings": [],
+      "card_id": null,
+      "entity_id": "-PDne5D4w1fsIgBU70s-z",
+      "visualization_settings": {
+        "dashcard.background": false,
+        "virtual_card": {
+          "name": null,
+          "display": "heading",
+          "visualization_settings": {},
+          "archived": false
+        }
+      },
+      "size_y": 1,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:24:01.24534Z",
+      "row": 44
+    },
+    {
+      "size_x": 22,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": "2026-09-10T19:34:37.705567Z",
+        "description": null,
+        "archived": false,
+        "view_count": 9,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 13,
+        "result_metadata": [
+          {
+            "database_type": "date",
+            "semantic_type": null,
+            "table_id": 13,
+            "lib/deduplicated-name": "date_day",
+            "lib/original-name": "date_day",
+            "name": "date_day",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "date_day",
+            "lib/original-display-name": "Date Day",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              110,
+              null
+            ],
+            "effective_type": "type/Date",
+            "active": true,
+            "id": 110,
+            "lib/desired-column-alias": "date_day",
+            "position": 0,
+            "visibility_type": "normal",
+            "display_name": "Date Day",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 7,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2026-09-10",
+                  "latest": "2026-09-16",
+                  "mode-fraction": 0.14285714285714285,
+                  "top-3-fraction": 0.42857142857142855
+                }
+              }
+            },
+            "base_type": "type/Date"
+          },
+          {
+            "database_type": "int2",
+            "semantic_type": null,
+            "table_id": 13,
+            "lib/deduplicated-name": "max_precip_prob",
+            "lib/original-name": "max_precip_prob",
+            "name": "max_precip_prob",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "max_precip_prob",
+            "lib/original-display-name": "Max Precip Prob",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              119,
+              null
+            ],
+            "effective_type": "type/Integer",
+            "active": true,
+            "id": 119,
+            "lib/desired-column-alias": "max_precip_prob",
+            "position": 9,
+            "visibility_type": "normal",
+            "display_name": "Max Precip Prob",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 7,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": -0.6922947209717316,
+                  "min": 8.0,
+                  "q1": 24.0,
+                  "q3": 85.0,
+                  "excess-kurtosis": -0.5908023582463171,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.14285714285714285,
+                  "top-3-fraction": 0.42857142857142855,
+                  "max": 99.0,
+                  "sd": 32.526179931746995,
+                  "avg": 59.57142857142856
+                }
+              }
+            },
+            "base_type": "type/Integer"
+          },
+          {
+            "database_type": "int2",
+            "semantic_type": null,
+            "table_id": 13,
+            "lib/deduplicated-name": "min_precip_prob",
+            "lib/original-name": "min_precip_prob",
+            "name": "min_precip_prob",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "min_precip_prob",
+            "lib/original-display-name": "Min Precip Prob",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              118,
+              null
+            ],
+            "effective_type": "type/Integer",
+            "active": true,
+            "id": 118,
+            "lib/desired-column-alias": "min_precip_prob",
+            "position": 8,
+            "visibility_type": "normal",
+            "display_name": "Min Precip Prob",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": null,
+                  "min": 0.0,
+                  "q1": 0.0,
+                  "q3": 0.0,
+                  "excess-kurtosis": null,
+                  "zero-fraction": 1.0,
+                  "mode-fraction": 1.0,
+                  "top-3-fraction": 1.0,
+                  "max": 0.0,
+                  "sd": 0.0,
+                  "avg": 0.0
+                }
+              }
+            },
+            "base_type": "type/Integer"
+          },
+          {
+            "database_type": "numeric",
+            "semantic_type": null,
+            "table_id": 13,
+            "lib/deduplicated-name": "avg_precip_prob",
+            "lib/original-name": "avg_precip_prob",
+            "name": "avg_precip_prob",
+            "lib/source": "source/table-defaults",
+            "lib/source-column-alias": "avg_precip_prob",
+            "lib/original-display-name": "Avg Precip Prob",
+            "source": "fields",
+            "field_ref": [
+              "field",
+              117,
+              null
+            ],
+            "effective_type": "type/Decimal",
+            "active": true,
+            "id": 117,
+            "lib/desired-column-alias": "avg_precip_prob",
+            "position": 7,
+            "visibility_type": "normal",
+            "display_name": "Avg Precip Prob",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 7,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "skewness": -0.40013657819874365,
+                  "min": 5.13,
+                  "q1": 6.92,
+                  "q3": 32.63,
+                  "excess-kurtosis": -1.0495091985957252,
+                  "zero-fraction": 0.0,
+                  "mode-fraction": 0.14285714285714285,
+                  "top-3-fraction": 0.42857142857142855,
+                  "max": 39.38,
+                  "sd": 12.749127701253022,
+                  "avg": 22.722857142857144
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 6,
+        "query_type": "query",
+        "download_perms": "full",
+        "name": "Week Weather Report - Precipitations",
+        "document_id": null,
+        "last_used_at": "2026-09-10T19:38:49.881232Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 17,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-09-10T19:38:26.201843Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "source-table": 13,
+              "lib/type": "mbql.stage/mbql",
+              "fields": [
+                [
+                  "field",
+                  {
+                    "effective-type": "type/Date",
+                    "lib/uuid": "fdf29ebd-0fbf-4f5d-972a-993b3156337d",
+                    "base-type": "type/Date"
+                  },
+                  110
+                ],
+                [
+                  "field",
+                  {
+                    "effective-type": "type/Integer",
+                    "lib/uuid": "e82ad7d2-cd93-40e2-b9b0-019b1fca1b30",
+                    "base-type": "type/Integer"
+                  },
+                  119
+                ],
+                [
+                  "field",
+                  {
+                    "lib/uuid": "cc2c89e9-89dc-4b6c-b038-38f9c46d6269",
+                    "effective-type": "type/Integer",
+                    "base-type": "type/Integer"
+                  },
+                  118
+                ],
+                [
+                  "field",
+                  {
+                    "effective-type": "type/Decimal",
+                    "lib/uuid": "36abcc1d-6dc9-4c42-b758-deb457659cc8",
+                    "base-type": "type/Decimal"
+                  },
+                  117
+                ]
+              ]
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 44,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "line",
+        "archived_directly": false,
+        "entity_id": "e4cf8w2aQ7nALyM0o96kY",
+        "collection_preview": true,
+        "visualization_settings": {
+          "graph.dimensions": [
+            "date_day"
+          ],
+          "graph.x_axis.scale": "timeseries",
+          "series_settings": {
+            "max_precip_prob": {
+              "axis": "left"
+            },
+            "avg_precip_prob": {
+              "axis": "left"
+            },
+            "min_precip_prob": {
+              "axis": "left"
+            }
+          },
+          "graph.metrics": [
+            "max_precip_prob",
+            "avg_precip_prob",
+            "min_precip_prob"
+          ]
+        },
+        "metabase_version": "v0.63.1.4 (9bd2d23)",
+        "parameters": [],
+        "dashboard_id": 2,
+        "created_at": "2026-09-10T19:24:50.361466Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 1,
+      "id": 44,
+      "parameter_mappings": [],
+      "card_id": 44,
+      "entity_id": "2ok8K1Y8WihQTA47Y6eVP",
+      "visualization_settings": {},
+      "size_y": 12,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:24:50.372349Z",
+      "row": 45
+    },
+    {
+      "size_x": 7,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 7,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": null,
+        "result_metadata": [
+          {
+            "database_type": "text",
+            "semantic_type": null,
+            "lib/deduplicated-name": "concat",
+            "lib/original-name": "concat",
+            "name": "concat",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "concat",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "concat",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "lib/desired-column-alias": "concat",
+            "display_name": "concat",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "percent-blank": 0.0,
+                  "average-length": 4.0,
+                  "mode-fraction": 1.0,
+                  "top-3-fraction": 1.0
+                }
+              }
+            },
+            "base_type": "type/Text"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 6,
+        "query_type": "native",
+        "download_perms": "full",
+        "name": "Current Temperature",
+        "document_id": null,
+        "last_used_at": "2026-09-10T19:38:49.881232Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 11,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-09-10T19:38:26.201843Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "lib/type": "mbql.stage/native",
+              "native": "SELECT\n\tCONCAT(temperature, '°C')\nFROM wdp.today_weather_report\nWHERE hour_ < TO_CHAR((CURRENT_TIMESTAMP AT TIME ZONE 'America/Denver'), 'HH24:MI')\nORDER BY hour_ DESC\nLIMIT 1;"
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 45,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "scalar",
+        "archived_directly": false,
+        "entity_id": "2nahNgcNpe5OD0uYGon2w",
+        "collection_preview": true,
+        "visualization_settings": {
+          "scalar.segments": []
+        },
+        "metabase_version": "v0.63.1.4 (9bd2d23)",
+        "parameters": [],
+        "dashboard_id": 2,
+        "created_at": "2026-09-10T19:26:27.44694Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 1,
+      "id": 45,
+      "parameter_mappings": [],
+      "card_id": 45,
+      "entity_id": "HLg0C2wqTihxxcDeYMxQf",
+      "visualization_settings": {},
+      "size_y": 4,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:26:27.458514Z",
+      "row": 1
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "query_average_duration": null,
+        "download_perms": "none"
+      },
+      "updated_at": "2026-09-10T19:26:44.089515Z",
+      "col": 0,
+      "id": 46,
+      "parameter_mappings": [],
+      "card_id": null,
+      "entity_id": "5vCyf27IR2DjMEWlPXkFi",
+      "visualization_settings": {
+        "dashcard.background": false,
+        "virtual_card": {
+          "name": null,
+          "display": "heading",
+          "visualization_settings": {},
+          "archived": false
+        }
+      },
+      "size_y": 1,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:26:44.089515Z",
+      "row": 0
+    },
+    {
+      "size_x": 6,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 6,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": null,
+        "result_metadata": [
+          {
+            "database_type": "text",
+            "semantic_type": null,
+            "lib/deduplicated-name": "temp_categorized",
+            "lib/original-name": "temp_categorized",
+            "name": "temp_categorized",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "temp_categorized",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "temp_categorized",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "lib/desired-column-alias": "temp_categorized",
+            "display_name": "temp_categorized",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "percent-blank": 0.0,
+                  "average-length": 4.0,
+                  "mode-fraction": 1.0,
+                  "top-3-fraction": 1.0
+                }
+              }
+            },
+            "base_type": "type/Text"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 6,
+        "query_type": "native",
+        "download_perms": "full",
+        "name": "Current Thermal Sensation",
+        "document_id": null,
+        "last_used_at": "2026-09-10T19:38:49.881232Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 8,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-09-10T19:38:26.201843Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "native": "SELECT\n\ttemp_categorized\nFROM wdp.today_weather_report\nWHERE hour_ < TO_CHAR((CURRENT_TIMESTAMP AT TIME ZONE 'America/Denver'), 'HH24:MI')\nORDER BY hour_ DESC\nLIMIT 1;\n",
+              "lib/type": "mbql.stage/native"
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 46,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "scalar",
+        "archived_directly": false,
+        "entity_id": "ZaNlTwckGFlvJD42CPwzy",
+        "collection_preview": true,
+        "visualization_settings": {
+          "scalar.segments": []
+        },
+        "metabase_version": "v0.63.1.4 (9bd2d23)",
+        "parameters": [],
+        "dashboard_id": 2,
+        "created_at": "2026-09-10T19:27:02.78285Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-09-10T19:27:42.107159Z",
+      "col": 9,
+      "id": 47,
+      "parameter_mappings": [],
+      "card_id": 46,
+      "entity_id": "p8ttm0c5qCdXUZQs7juEx",
+      "visualization_settings": {},
+      "size_y": 4,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:27:02.791282Z",
+      "row": 1
+    },
+    {
+      "size_x": 7,
+      "dashboard_tab_id": null,
+      "series": [],
+      "inline_parameters": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 5,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": null,
+        "result_metadata": [
+          {
+            "database_type": "text",
+            "semantic_type": null,
+            "lib/deduplicated-name": "concat",
+            "lib/original-name": "concat",
+            "name": "concat",
+            "lib/source": "source/native",
+            "lib/source-column-alias": "concat",
+            "source": "native",
+            "field_ref": [
+              "field",
+              "concat",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "lib/desired-column-alias": "concat",
+            "display_name": "concat",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "percent-blank": 0.0,
+                  "average-length": 9.0,
+                  "mode-fraction": 1.0,
+                  "top-3-fraction": 1.0
+                }
+              }
+            },
+            "base_type": "type/Text"
+          }
+        ],
+        "embedding_type": null,
+        "initially_published_at": null,
+        "can_write": true,
+        "card_schema": 23,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 6,
+        "query_type": "native",
+        "download_perms": "full",
+        "name": "Current Precipitation Probability",
+        "document_id": null,
+        "last_used_at": "2026-09-10T19:38:49.881232Z",
+        "type": "question",
+        "dimensions": null,
+        "query_average_duration": 6,
+        "creator_id": 1,
+        "moderation_reviews": [],
+        "updated_at": "2026-09-10T19:38:26.201843Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "lib/type": "mbql/query",
+          "database": 2,
+          "stages": [
+            {
+              "native": "SELECT\n\tCONCAT(precip_prob, '% (', precip_prob_categorized, ')')\nFROM wdp.today_weather_report\nWHERE hour_ < TO_CHAR((CURRENT_TIMESTAMP AT TIME ZONE 'America/Denver'), 'HH24:MI')\nORDER BY hour_ DESC\nLIMIT 1;\n",
+              "lib/type": "mbql.stage/native"
+            }
+          ]
+        },
+        "dimension_mappings": null,
+        "id": 47,
+        "legacy_query": null,
+        "parameter_mappings": [],
+        "display": "scalar",
+        "archived_directly": false,
+        "entity_id": "0HMwQPNr8o6KYCt6Li_XU",
+        "collection_preview": true,
+        "visualization_settings": {
+          "scalar.segments": []
+        },
+        "metabase_version": "v0.63.1.4 (9bd2d23)",
+        "parameters": [],
+        "dashboard_id": 2,
+        "created_at": "2026-09-10T19:27:24.924981Z",
+        "public_uuid": null
+      },
+      "updated_at": "2026-09-10T19:27:42.107159Z",
+      "col": 16,
+      "id": 48,
+      "parameter_mappings": [],
+      "card_id": 47,
+      "entity_id": "Sctf8zF1UtKH5SEbtNtaA",
+      "visualization_settings": {},
+      "size_y": 4,
+      "dashboard_id": 2,
+      "created_at": "2026-09-10T19:27:24.932885Z",
+      "row": 1
+    }
+  ],
+  "embedding_type": null,
+  "initially_published_at": null,
+  "can_write": true,
+  "can_set_cache_policy": true,
+  "tabs": [],
+  "enable_embedding": false,
+  "collection_id": 6,
+  "show_in_getting_started": false,
+  "name": "Weather Report",
+  "is_remote_synced": false,
+  "width": "fixed",
+  "caveats": null,
+  "collection_authority_level": null,
+  "creator_id": 1,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2026-09-10T19:38:26.201843Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "last_used_param_values": {},
+  "id": 2,
+  "last_viewed_at": "2026-09-10T19:38:49.860767Z",
+  "position": null,
+  "archived_directly": false,
+  "entity_id": "zkOsdxOyNDLd4_6_uUHMB",
+  "param_fields": {},
+  "last-edit-info": {
+    "id": 1,
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "last_name": "Matias",
+    "timestamp": "2026-09-10T19:38:26.227917Z"
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "weather_report",
+    "archive_operation_id": null,
+    "name": "Weather Report",
+    "is_remote_synced": false,
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "effective_location": "/",
+    "id": 6,
+    "archived_directly": null,
+    "entity_id": "xSBhLj9qD9DWNsB4P8cfe",
+    "location": "/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2026-09-10T19:38:07.508625Z"
+  },
+  "parameters": [],
+  "auto_apply_filters": true,
+  "created_at": "2026-09-10T19:19:59.614413Z",
+  "public_uuid": null,
+  "points_of_interest": null,
+  "can_delete": false
+}

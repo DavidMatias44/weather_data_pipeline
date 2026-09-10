@@ -1,0 +1,333 @@
+{
+  "cache_invalidated_at": null,
+  "description": null,
+  "archived": false,
+  "view_count": 9,
+  "collection_position": null,
+  "source_card_id": null,
+  "table_id": 13,
+  "can_run_adhoc_query": true,
+  "result_metadata": [
+    {
+      "database_type": "date",
+      "semantic_type": null,
+      "table_id": 13,
+      "lib/deduplicated-name": "date_day",
+      "lib/original-name": "date_day",
+      "name": "date_day",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "date_day",
+      "lib/original-display-name": "Date Day",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        110,
+        null
+      ],
+      "effective_type": "type/Date",
+      "active": true,
+      "id": 110,
+      "lib/desired-column-alias": "date_day",
+      "position": 0,
+      "visibility_type": "normal",
+      "display_name": "Date Day",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 7,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/DateTime": {
+            "earliest": "2026-09-10",
+            "latest": "2026-09-16",
+            "mode-fraction": 0.14285714285714285,
+            "top-3-fraction": 0.42857142857142855
+          }
+        }
+      },
+      "base_type": "type/Date"
+    },
+    {
+      "database_type": "numeric",
+      "semantic_type": null,
+      "table_id": 13,
+      "lib/deduplicated-name": "avg_temperature",
+      "lib/original-name": "avg_temperature",
+      "name": "avg_temperature",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "avg_temperature",
+      "lib/original-display-name": "Avg Temperature",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        114,
+        null
+      ],
+      "effective_type": "type/Decimal",
+      "active": true,
+      "id": 114,
+      "lib/desired-column-alias": "avg_temperature",
+      "position": 4,
+      "visibility_type": "normal",
+      "display_name": "Avg Temperature",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 7,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": -0.9582714682739513,
+            "min": 19.43,
+            "q1": 20.13,
+            "q3": 20.59,
+            "excess-kurtosis": 1.432057407247017,
+            "zero-fraction": 0.0,
+            "mode-fraction": 0.14285714285714285,
+            "top-3-fraction": 0.42857142857142855,
+            "max": 20.95,
+            "sd": 0.4856610615096361,
+            "avg": 20.330000000000002
+          }
+        }
+      },
+      "base_type": "type/Decimal"
+    },
+    {
+      "database_type": "float4",
+      "semantic_type": null,
+      "table_id": 13,
+      "lib/deduplicated-name": "min_temperature",
+      "lib/original-name": "min_temperature",
+      "name": "min_temperature",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "min_temperature",
+      "lib/original-display-name": "Min Temperature",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        115,
+        null
+      ],
+      "effective_type": "type/Float",
+      "active": true,
+      "id": 115,
+      "lib/desired-column-alias": "min_temperature",
+      "position": 5,
+      "visibility_type": "normal",
+      "display_name": "Min Temperature",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 7,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": 0.01686458696430421,
+            "min": 14.800000190734863,
+            "q1": 15.100000381469727,
+            "q3": 16.100000381469727,
+            "excess-kurtosis": -1.9966330499980995,
+            "zero-fraction": 0.0,
+            "mode-fraction": 0.14285714285714285,
+            "top-3-fraction": 0.42857142857142855,
+            "max": 16.200000762939453,
+            "sd": 0.5533449652583708,
+            "avg": 15.54285730634417
+          }
+        }
+      },
+      "base_type": "type/Float"
+    },
+    {
+      "database_type": "float4",
+      "semantic_type": null,
+      "table_id": 13,
+      "lib/deduplicated-name": "max_temperature",
+      "lib/original-name": "max_temperature",
+      "name": "max_temperature",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "max_temperature",
+      "lib/original-display-name": "Max Temperature",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        116,
+        null
+      ],
+      "effective_type": "type/Float",
+      "active": true,
+      "id": 116,
+      "lib/desired-column-alias": "max_temperature",
+      "position": 6,
+      "visibility_type": "normal",
+      "display_name": "Max Temperature",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 6,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": -1.244159367465152,
+            "min": 25.200000762939453,
+            "q1": 26.899999618530273,
+            "q3": 27.600000381469727,
+            "excess-kurtosis": 2.7896125253335775,
+            "zero-fraction": 0.0,
+            "mode-fraction": 0.2857142857142857,
+            "top-3-fraction": 0.5714285714285714,
+            "max": 28.399999618530273,
+            "sd": 0.989708675697463,
+            "avg": 27.142857142857142
+          }
+        }
+      },
+      "base_type": "type/Float"
+    }
+  ],
+  "embedding_type": null,
+  "creator": {
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "is_data_analyst": false,
+    "last_login": "2026-09-10T19:39:32.084385Z",
+    "is_qbnewb": false,
+    "is_superuser": true,
+    "id": 1,
+    "last_name": "Matias",
+    "tenant_id": null,
+    "date_joined": "2026-09-10T19:17:29.703487Z",
+    "common_name": "David Matias"
+  },
+  "initially_published_at": null,
+  "can_write": true,
+  "card_schema": 23,
+  "database_id": 2,
+  "enable_embedding": false,
+  "collection_id": 6,
+  "query_type": "query",
+  "name": "Week Weather Report - Temperatures",
+  "last_query_start": "2026-09-10T19:39:21.941609Z",
+  "is_remote_synced": false,
+  "dashboard_count": 1,
+  "document_id": null,
+  "last_used_at": "2026-09-10T19:38:49.881232Z",
+  "dashboard": {
+    "name": "Weather Report",
+    "id": 2,
+    "moderation_status": null
+  },
+  "type": "question",
+  "dimensions": null,
+  "average_query_time": 28.5,
+  "creator_id": 1,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2026-09-10T19:38:26.201843Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "dataset_query": {
+    "lib/type": "mbql/query",
+    "database": 2,
+    "stages": [
+      {
+        "lib/type": "mbql.stage/mbql",
+        "source-table": 13,
+        "fields": [
+          [
+            "field",
+            {
+              "lib/uuid": "772efdbb-f40c-4118-a2c6-de0ec4e6acb5",
+              "effective-type": "type/Date",
+              "base-type": "type/Date"
+            },
+            110
+          ],
+          [
+            "field",
+            {
+              "lib/uuid": "72bdc32b-ecba-49b0-b449-df920a82bc07",
+              "effective-type": "type/Decimal",
+              "base-type": "type/Decimal"
+            },
+            114
+          ],
+          [
+            "field",
+            {
+              "lib/uuid": "cae6244b-f0f1-4911-91a7-12c0461e3c1b",
+              "effective-type": "type/Float",
+              "base-type": "type/Float"
+            },
+            115
+          ],
+          [
+            "field",
+            {
+              "lib/uuid": "a1b9611d-82e2-4d0a-9c7d-7cb5e7497e12",
+              "effective-type": "type/Float",
+              "base-type": "type/Float"
+            },
+            116
+          ]
+        ]
+      }
+    ]
+  },
+  "dimension_mappings": null,
+  "id": 43,
+  "legacy_query": null,
+  "parameter_mappings": [],
+  "can_manage_db": true,
+  "display": "line",
+  "archived_directly": false,
+  "entity_id": "7NQxfKVuqfhJvewYCZNXp",
+  "param_fields": {},
+  "collection_preview": true,
+  "last-edit-info": {
+    "id": 1,
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "last_name": "Matias",
+    "timestamp": "2026-09-10T19:23:46.190701Z"
+  },
+  "visualization_settings": {
+    "graph.dimensions": [
+      "date_day"
+    ],
+    "graph.x_axis.scale": "timeseries",
+    "graph.metrics": [
+      "max_temperature",
+      "avg_temperature",
+      "min_temperature"
+    ]
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "weather_report",
+    "archive_operation_id": null,
+    "name": "Weather Report",
+    "is_remote_synced": false,
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "id": 6,
+    "archived_directly": null,
+    "entity_id": "xSBhLj9qD9DWNsB4P8cfe",
+    "location": "/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2026-09-10T19:38:07.508625Z"
+  },
+  "metabase_version": "v0.63.1.4 (9bd2d23)",
+  "parameters": [],
+  "dashboard_id": 2,
+  "created_at": "2026-09-10T19:23:46.166673Z",
+  "parameter_usage_count": 0,
+  "public_uuid": null,
+  "can_delete": false
+}

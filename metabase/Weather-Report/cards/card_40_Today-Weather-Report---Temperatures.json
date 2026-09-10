@@ -1,0 +1,225 @@
+{
+  "cache_invalidated_at": null,
+  "description": null,
+  "archived": false,
+  "view_count": 12,
+  "collection_position": null,
+  "source_card_id": null,
+  "table_id": 12,
+  "can_run_adhoc_query": true,
+  "result_metadata": [
+    {
+      "database_type": "text",
+      "semantic_type": "type/Category",
+      "table_id": 12,
+      "lib/deduplicated-name": "hour_",
+      "lib/original-name": "hour_",
+      "name": "hour_",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "hour_",
+      "lib/original-display-name": "Hour",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        109,
+        null
+      ],
+      "effective_type": "type/Text",
+      "active": true,
+      "id": 109,
+      "lib/desired-column-alias": "hour_",
+      "position": 7,
+      "visibility_type": "normal",
+      "display_name": "Hour",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 24,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0.0,
+            "percent-url": 0.0,
+            "percent-email": 0.0,
+            "percent-state": 0.0,
+            "percent-blank": 0.0,
+            "average-length": 5.0,
+            "mode-fraction": 0.041666666666666664,
+            "top-3-fraction": 0.125
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "database_type": "float4",
+      "semantic_type": null,
+      "table_id": 12,
+      "lib/deduplicated-name": "temperature",
+      "lib/original-name": "temperature",
+      "name": "temperature",
+      "lib/source": "source/table-defaults",
+      "lib/source-column-alias": "temperature",
+      "lib/original-display-name": "Temperature",
+      "source": "fields",
+      "field_ref": [
+        "field",
+        105,
+        null
+      ],
+      "effective_type": "type/Float",
+      "active": true,
+      "id": 105,
+      "lib/desired-column-alias": "temperature",
+      "position": 3,
+      "visibility_type": "normal",
+      "display_name": "Temperature",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 22,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": 0.29985879390955383,
+            "min": 16.100000381469727,
+            "q1": 16.5,
+            "q3": 24.299999237060547,
+            "excess-kurtosis": -1.4815074371340444,
+            "zero-fraction": 0.0,
+            "mode-fraction": 0.125,
+            "top-3-fraction": 0.20833333333333334,
+            "max": 27.299999237060547,
+            "sd": 4.112756395738994,
+            "avg": 20.945833285649616
+          }
+        }
+      },
+      "base_type": "type/Float"
+    }
+  ],
+  "embedding_type": null,
+  "creator": {
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "is_data_analyst": false,
+    "last_login": "2026-09-10T19:39:32.084385Z",
+    "is_qbnewb": false,
+    "is_superuser": true,
+    "id": 1,
+    "last_name": "Matias",
+    "tenant_id": null,
+    "date_joined": "2026-09-10T19:17:29.703487Z",
+    "common_name": "David Matias"
+  },
+  "initially_published_at": null,
+  "can_write": true,
+  "card_schema": 23,
+  "database_id": 2,
+  "enable_embedding": false,
+  "collection_id": 6,
+  "query_type": "query",
+  "name": "Today Weather Report - Temperatures",
+  "last_query_start": "2026-09-10T19:39:21.812288Z",
+  "is_remote_synced": false,
+  "dashboard_count": 1,
+  "document_id": null,
+  "last_used_at": "2026-09-10T19:38:49.881232Z",
+  "dashboard": {
+    "name": "Weather Report",
+    "id": 2,
+    "moderation_status": null
+  },
+  "type": "question",
+  "dimensions": null,
+  "average_query_time": 28.0,
+  "creator_id": 1,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2026-09-10T19:38:26.201843Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "dataset_query": {
+    "lib/type": "mbql/query",
+    "database": 2,
+    "stages": [
+      {
+        "lib/type": "mbql.stage/mbql",
+        "source-table": 12,
+        "fields": [
+          [
+            "field",
+            {
+              "lib/uuid": "0bc44f5b-57a8-46a4-ab8e-6f97a349a587",
+              "effective-type": "type/Text",
+              "base-type": "type/Text"
+            },
+            109
+          ],
+          [
+            "field",
+            {
+              "effective-type": "type/Float",
+              "lib/uuid": "db162688-e5e2-4c5f-b756-60df1f0f969a",
+              "base-type": "type/Float"
+            },
+            105
+          ]
+        ]
+      }
+    ]
+  },
+  "dimension_mappings": null,
+  "id": 40,
+  "legacy_query": null,
+  "parameter_mappings": [],
+  "can_manage_db": true,
+  "display": "line",
+  "archived_directly": false,
+  "entity_id": "WnGonPUvSKDtGHt-3yfPc",
+  "param_fields": {},
+  "collection_preview": true,
+  "last-edit-info": {
+    "id": 1,
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "last_name": "Matias",
+    "timestamp": "2026-09-10T19:20:34.126872Z"
+  },
+  "visualization_settings": {
+    "graph.x_axis.scale": "ordinal",
+    "graph.dimensions": [
+      "hour_"
+    ],
+    "graph.metrics": [
+      "temperature"
+    ]
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "weather_report",
+    "archive_operation_id": null,
+    "name": "Weather Report",
+    "is_remote_synced": false,
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "id": 6,
+    "archived_directly": null,
+    "entity_id": "xSBhLj9qD9DWNsB4P8cfe",
+    "location": "/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2026-09-10T19:38:07.508625Z"
+  },
+  "metabase_version": "v0.63.1.4 (9bd2d23)",
+  "parameters": [],
+  "dashboard_id": 2,
+  "created_at": "2026-09-10T19:20:34.098604Z",
+  "parameter_usage_count": 0,
+  "public_uuid": null,
+  "can_delete": false
+}
