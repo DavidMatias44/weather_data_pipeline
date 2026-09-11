@@ -23,6 +23,8 @@ with DAG(
     dag_id="wdp_orchestrator",
     start_date=datetime(year=2026, month=8, day=20, tzinfo=UTC),
     schedule=timedelta(hours=1),
+    catchup=False,
+    max_active_runs=1,
 ) as dag:
     task1 = PythonOperator(task_id="ETL_process", python_callable=main)
 

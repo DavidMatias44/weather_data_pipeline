@@ -6,11 +6,13 @@
 }}
 
 select
+    id,
     time,
     latitude,
     longitude,
     elevation,
     temperature,
     precip_prob,
-    updated_at
+    valid_from,
+    valid_to
 from {{ source('staging', 'raw_data') }}

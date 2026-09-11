@@ -16,5 +16,8 @@ select
     min(precip_prob) as min_precip_prob,
     max(precip_prob) as max_precip_prob
 from {{ ref('int_weather_enriched') }}
-where time::date between current_date and current_date + interval '7' day
+where
+    time::date between {{ current_date_timezone() }}
+    and {{ current_date_timezone() }} + interval '7' day
+    and is_current = 1
 group by 1, 2, 3, 4
