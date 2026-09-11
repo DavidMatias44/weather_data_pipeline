@@ -16,5 +16,9 @@ wheels/
 # Virtual environments
 .venv
 
+# Metabase import/export
+metabase/Trash
+metabase/import_report_*.json
+
 .env
 db_map.json
