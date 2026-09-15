@@ -95,11 +95,27 @@ Diagram to visualize how Airflow run every task.
 
 ![Ochestration](docs/orchestration.png)
 
-### Dashboard
+## Metabase
 
 I chose Metabase as the analytics tool due to its deployment simplicity with Docker. As a first-time user, I found the [official Metabase documentation](https://www.metabase.com/docs/latest/configuring-metabase/setting-up-metabase) very helpful.
 
-For more details check the [Dashboard documentation](docs/dashboard.md)
+The free version of Metabase does not have an `import`/`export` option, therefore, the metabase-migration-toolkit was used. Here is the [official GitHub repository](https://github.com/Finverity/metabase-migration-toolkit). It is a very well written documentation, it helped me a lot.
+
+Now, import and exporting Metabase dashboards are as simple as running a command in terminal:
+
+Export:
+```bash
+bash metabase/scripts/export.sh
+```
+
+Import:
+```bash
+bash metabase/scripts/import.sh
+```
+
+### Dashboard
+
+For more details about the dashboard check the [Dashboard documentation](docs/dashboard.md)
 
 ## Details
 
