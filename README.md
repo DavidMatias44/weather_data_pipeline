@@ -178,3 +178,23 @@ The SQL code within these models is styled according to the dbt [SQL style guide
 The Cosmos package is used to orchestrate the dbt models. This packages simplifies considerably the setup and execution process for dbt workflows.
 
 The implementation follows the main steps described in this [Medium blog post](https://medium.com/@wajahatullah.k/running-dbt-on-postgresql-with-the-cosmos-package-airflow-904256044db1).
+
+### pre-commit tool
+
+I did some research to find a way to ensure proper code formatting and discovered **pre-commit**. This tool runs ***hooks*** on every commit to identify simple issues in the code.
+
+I read the [documentation](https://pre-commit.com/#install) to learn how to install the **pre-commit package manager** and configure the ***hooks*** using the `.pre-commit-config.yaml` file. The following hooks were configured:
+
+- ruff (Python).
+
+- sqlfluff (SQL using the **dbt templater** and **Postgres** dependencies).
+
+I ran into some issues when running the hooks manually (and therefore automatically) with the command:
+
+```bash
+pre-commit run --all-files
+```
+
+Sqlfluff was unable to connect correctly to the database where the dbt models reside. I understood the problem once I learned how dbt manages its targets: "*dbt supports multiple targets within one profile to encourage the use of separate development and production environments*", in this case, development and test environments. Then, I added a new target in the `profiles.yml` file and configured the same target in the `.sqlfluff` file. The `profiles.example.yml` file shows this.
+
+The [dbt documentation](https://docs.getdbt.com/docs/local/profiles.yml?version=2#understanding-targets-in-profiles) about profiles.
