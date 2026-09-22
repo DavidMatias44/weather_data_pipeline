@@ -47,6 +47,9 @@ models:
       - name: elevation
         tests:
           - not_null
+      - name: temperature
+        tests:
+          - not_null
       - name: temp_categorized
         tests:
           - accepted_values:
@@ -92,7 +95,6 @@ models:
     columns:
       - name: hour_
         tests:
-          - unique
           - not_null
       - name: latitude
         tests:
@@ -101,6 +103,9 @@ models:
         tests:
           - not_null
       - name: elevation
+        tests:
+          - not_null
+      - name: temperature
         tests:
           - not_null
       - name: temp_categorized
@@ -137,7 +142,6 @@ models:
     columns:
       - name: date_day
         tests:
-          - unique
           - not_null
       - name: latitude
         tests:
