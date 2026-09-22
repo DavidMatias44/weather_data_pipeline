@@ -1,36 +1,32 @@
 {
-  "cache_invalidated_at": null,
+  "cache_invalidated_at": "2026-09-22T19:24:25.172311Z",
   "description": null,
   "archived": false,
-  "view_count": 12,
+  "view_count": 3,
   "collection_position": null,
   "source_card_id": null,
-  "table_id": 12,
+  "table_id": null,
   "can_run_adhoc_query": true,
   "result_metadata": [
     {
       "database_type": "text",
-      "semantic_type": "type/Category",
-      "table_id": 12,
+      "semantic_type": null,
       "lib/deduplicated-name": "hour_",
       "lib/original-name": "hour_",
       "name": "hour_",
-      "lib/source": "source/table-defaults",
+      "lib/source": "source/native",
       "lib/source-column-alias": "hour_",
-      "lib/original-display-name": "Hour",
-      "source": "fields",
+      "source": "native",
       "field_ref": [
         "field",
-        109,
-        null
+        "hour_",
+        {
+          "base-type": "type/Text"
+        }
       ],
       "effective_type": "type/Text",
-      "active": true,
-      "id": 109,
       "lib/desired-column-alias": "hour_",
-      "position": 7,
-      "visibility_type": "normal",
-      "display_name": "Hour",
+      "display_name": "hour_",
       "fingerprint": {
         "global": {
           "distinct-count": 24,
@@ -54,44 +50,40 @@
     {
       "database_type": "float4",
       "semantic_type": null,
-      "table_id": 12,
       "lib/deduplicated-name": "temperature",
       "lib/original-name": "temperature",
       "name": "temperature",
-      "lib/source": "source/table-defaults",
+      "lib/source": "source/native",
       "lib/source-column-alias": "temperature",
-      "lib/original-display-name": "Temperature",
-      "source": "fields",
+      "source": "native",
       "field_ref": [
         "field",
-        105,
-        null
+        "temperature",
+        {
+          "base-type": "type/Float"
+        }
       ],
       "effective_type": "type/Float",
-      "active": true,
-      "id": 105,
       "lib/desired-column-alias": "temperature",
-      "position": 3,
-      "visibility_type": "normal",
-      "display_name": "Temperature",
+      "display_name": "temperature",
       "fingerprint": {
         "global": {
-          "distinct-count": 22,
+          "distinct-count": 23,
           "nil%": 0.0
         },
         "type": {
           "type/Number": {
-            "skewness": 0.29985879390955383,
-            "min": 16.100000381469727,
-            "q1": 16.5,
-            "q3": 24.299999237060547,
-            "excess-kurtosis": -1.4815074371340444,
+            "skewness": 0.3814967501800022,
+            "min": 16.200000762939453,
+            "q1": 17.0,
+            "q3": 24.899999618530273,
+            "excess-kurtosis": -1.363360108416955,
             "zero-fraction": 0.0,
-            "mode-fraction": 0.125,
-            "top-3-fraction": 0.20833333333333334,
-            "max": 27.299999237060547,
-            "sd": 4.112756395738994,
-            "avg": 20.945833285649616
+            "mode-fraction": 0.08333333333333333,
+            "top-3-fraction": 0.16666666666666666,
+            "max": 28.700000762939453,
+            "sd": 4.170939741854097,
+            "avg": 21.225000143051155
           }
         }
       },
@@ -103,13 +95,13 @@
     "email": "admin@mail.com",
     "first_name": "David",
     "is_data_analyst": false,
-    "last_login": "2026-09-10T19:39:32.084385Z",
+    "last_login": "2026-09-22T19:28:57.754278Z",
     "is_qbnewb": false,
     "is_superuser": true,
     "id": 1,
     "last_name": "Matias",
     "tenant_id": null,
-    "date_joined": "2026-09-10T19:17:29.703487Z",
+    "date_joined": "2026-09-22T19:23:40.293317Z",
     "common_name": "David Matias"
   },
   "initially_published_at": null,
@@ -117,14 +109,14 @@
   "card_schema": 23,
   "database_id": 2,
   "enable_embedding": false,
-  "collection_id": 6,
-  "query_type": "query",
-  "name": "Today Weather Report - Temperatures",
-  "last_query_start": "2026-09-10T19:39:21.812288Z",
+  "collection_id": 5,
+  "query_type": "native",
+  "name": "Today Temperatures",
+  "last_query_start": "2026-09-22T19:26:41.555212Z",
   "is_remote_synced": false,
   "dashboard_count": 1,
   "document_id": null,
-  "last_used_at": "2026-09-10T19:38:49.881232Z",
+  "last_used_at": "2026-09-22T19:26:41.684288Z",
   "dashboard": {
     "name": "Weather Report",
     "id": 2,
@@ -132,11 +124,11 @@
   },
   "type": "question",
   "dimensions": null,
-  "average_query_time": 28.0,
+  "average_query_time": 45.333333333333336,
   "creator_id": 1,
   "can_restore": false,
   "moderation_reviews": [],
-  "updated_at": "2026-09-10T19:38:26.201843Z",
+  "updated_at": "2026-09-22T19:24:25.175797Z",
   "made_public_by_id": null,
   "embedding_params": null,
   "cache_ttl": null,
@@ -145,39 +137,19 @@
     "database": 2,
     "stages": [
       {
-        "lib/type": "mbql.stage/mbql",
-        "source-table": 12,
-        "fields": [
-          [
-            "field",
-            {
-              "lib/uuid": "0bc44f5b-57a8-46a4-ab8e-6f97a349a587",
-              "effective-type": "type/Text",
-              "base-type": "type/Text"
-            },
-            109
-          ],
-          [
-            "field",
-            {
-              "effective-type": "type/Float",
-              "lib/uuid": "db162688-e5e2-4c5f-b756-60df1f0f969a",
-              "base-type": "type/Float"
-            },
-            105
-          ]
-        ]
+        "lib/type": "mbql.stage/native",
+        "native": "SELECT\n\thour_,\n\ttemperature\nFROM wdp.today_weather_report\nWHERE is_current = 1;"
       }
     ]
   },
   "dimension_mappings": null,
-  "id": 40,
+  "id": 50,
   "legacy_query": null,
   "parameter_mappings": [],
   "can_manage_db": true,
   "display": "line",
   "archived_directly": false,
-  "entity_id": "WnGonPUvSKDtGHt-3yfPc",
+  "entity_id": "8aSluIwrnWxdUPgkcLa9N",
   "param_fields": {},
   "collection_preview": true,
   "last-edit-info": {
@@ -185,9 +157,11 @@
     "email": "admin@mail.com",
     "first_name": "David",
     "last_name": "Matias",
-    "timestamp": "2026-09-10T19:20:34.126872Z"
+    "timestamp": "2026-09-22T19:24:25.193816Z"
   },
   "visualization_settings": {
+    "graph.x_axis.title_text": "Hour",
+    "graph.y_axis.title_text": "Temperatures",
     "graph.x_axis.scale": "ordinal",
     "graph.dimensions": [
       "hour_"
@@ -207,18 +181,18 @@
     "personal_owner_id": null,
     "type": null,
     "is_sample": false,
-    "id": 6,
+    "id": 5,
     "archived_directly": null,
-    "entity_id": "xSBhLj9qD9DWNsB4P8cfe",
+    "entity_id": "HenFs0lpC8OFhiR3uYSPc",
     "location": "/",
     "namespace": null,
     "is_personal": false,
-    "created_at": "2026-09-10T19:38:07.508625Z"
+    "created_at": "2026-09-22T19:24:23.352408Z"
   },
   "metabase_version": "v0.63.1.4 (9bd2d23)",
   "parameters": [],
   "dashboard_id": 2,
-  "created_at": "2026-09-10T19:20:34.098604Z",
+  "created_at": "2026-09-22T19:24:24.052544Z",
   "parameter_usage_count": 0,
   "public_uuid": null,
   "can_delete": false

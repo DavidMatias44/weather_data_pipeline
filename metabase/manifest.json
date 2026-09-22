@@ -1,7 +1,7 @@
 {
   "meta": {
     "source_url": "http://localhost:3000",
-    "export_timestamp": "2026-09-10T19:39:32.015225+00:00",
+    "export_timestamp": "2026-09-22T19:28:57.684793+00:00",
     "tool_version": "1.0.0",
     "cli_args": {
       "source_url": "http://localhost:3000",
@@ -26,7 +26,7 @@
   },
   "collections": [
     {
-      "id": 6,
+      "id": 5,
       "name": "Weather Report",
       "slug": "weather_report",
       "description": null,
@@ -47,89 +47,155 @@
   "cards": [
     {
       "id": 40,
-      "name": "Today Weather Report - Temperatures",
-      "collection_id": 6,
+      "name": "Week Temperatures",
+      "collection_id": 5,
       "database_id": 2,
-      "file_path": "Weather-Report/cards/card_40_Today-Weather-Report---Temperatures.json",
-      "checksum": "23d3ca62d5173c7a317f502cc83c1b78e1579cd6da615d97ff0df858c6cf04b8",
-      "archived": false,
-      "dataset_query": null,
-      "dataset": false
-    },
-    {
-      "id": 42,
-      "name": "Today Weather Report - Precipitation Probabilities",
-      "collection_id": 6,
-      "database_id": 2,
-      "file_path": "Weather-Report/cards/card_42_Today-Weather-Report---Precipitation-Probabilities.json",
-      "checksum": "b00da6eecbe8d08288105c87bc854f4b2c05073f47345a96ac0f3e2c35ed4c98",
-      "archived": false,
-      "dataset_query": null,
-      "dataset": false
-    },
-    {
-      "id": 43,
-      "name": "Week Weather Report - Temperatures",
-      "collection_id": 6,
-      "database_id": 2,
-      "file_path": "Weather-Report/cards/card_43_Week-Weather-Report---Temperatures.json",
-      "checksum": "b94ba4d5cb968d0bb26871bc63c03e8e8f587dbcdb30cbe47d6be505c6b6a8db",
-      "archived": false,
-      "dataset_query": null,
-      "dataset": false
-    },
-    {
-      "id": 44,
-      "name": "Week Weather Report - Precipitations",
-      "collection_id": 6,
-      "database_id": 2,
-      "file_path": "Weather-Report/cards/card_44_Week-Weather-Report---Precipitations.json",
-      "checksum": "f662c6b2b64f8afc8053d129893c5ae3e9c0ff52663e3dac69f20ffbce2d9bf1",
-      "archived": false,
-      "dataset_query": null,
-      "dataset": false
-    },
-    {
-      "id": 45,
-      "name": "Current Temperature",
-      "collection_id": 6,
-      "database_id": 2,
-      "file_path": "Weather-Report/cards/card_45_Current-Temperature.json",
-      "checksum": "7d7840330d9c26660633709813a4f6c2171132df37976c05c42c96fe159ce3df",
-      "archived": false,
-      "dataset_query": null,
-      "dataset": false
-    },
-    {
-      "id": 46,
-      "name": "Current Thermal Sensation",
-      "collection_id": 6,
-      "database_id": 2,
-      "file_path": "Weather-Report/cards/card_46_Current-Thermal-Sensation.json",
-      "checksum": "84995c4960c253453051b5bacae2e7b5d4f71539533d1b534dbb77b49e2d1239",
-      "archived": false,
-      "dataset_query": null,
-      "dataset": false
-    },
-    {
-      "id": 47,
-      "name": "Current Precipitation Probability",
-      "collection_id": 6,
-      "database_id": 2,
-      "file_path": "Weather-Report/cards/card_47_Current-Precipitation-Probability.json",
-      "checksum": "03e1146abfd5f8b732964f68971fa4c8b4eb56ef1d223f596d6a97f986845986",
+      "file_path": "Weather-Report/cards/card_40_Week-Temperatures.json",
+      "checksum": "493ccb76454441d77258df8734ee47bf8c50614a7504f8665a8b30768d77c4d7",
       "archived": false,
       "dataset_query": null,
       "dataset": false
     },
     {
       "id": 41,
-      "name": "Today Weather Report - Precipitation Probabilities",
-      "collection_id": 1,
+      "name": "Week Precipitation Probabilities",
+      "collection_id": 5,
       "database_id": 2,
-      "file_path": "Trash/cards/card_41_Today-Weather-Report---Precipitation-Probabilities.json",
-      "checksum": "aabc2a98d6df92595347024571d4bc796f21fec31dd7ccd4c5ad13a6eecbb80e",
-      "archived": true,
+      "file_path": "Weather-Report/cards/card_41_Week-Precipitation-Probabilities.json",
+      "checksum": "c4d2272beeb28b6d1d97fa5584364c56eebb0bd30397d9ea5099e21296d1d8a1",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 42,
+      "name": "Min Temperature Variations",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_42_Min-Temperature-Variations.json",
+      "checksum": "146fc73d5ba7f4f3e52626376576e45b94f3da3573298aaecc64000b3e421d83",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 43,
+      "name": "Avg Temperature Variations",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_43_Avg-Temperature-Variations.json",
+      "checksum": "7fba17ac0b496623fd1a8c11e071f3fd0d67dcf2f07462bc257730f3f47b5995",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 44,
+      "name": "Max Temperature Variations",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_44_Max-Temperature-Variations.json",
+      "checksum": "92a76298acc7e84c533bc3ef366c447ae55a126f3fa4ee53604b93afbc4cdc32",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 45,
+      "name": "Min Precipitation Probability Variations",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_45_Min-Precipitation-Probability-Variations.json",
+      "checksum": "624ea3817c298c495c5ef5402b5dec12c0e0c9b753365fac8181f1c9b5caa114",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 46,
+      "name": "Avg Precipitation Probability Variations",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_46_Avg-Precipitation-Probability-Variations.json",
+      "checksum": "b0458f4e9a03dff33d352fd9683a1e3a64d686cbcdf12bdc02ca1697c61d0a37",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 47,
+      "name": "Max Precipitation Probability Variations",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_47_Max-Precipitation-Probability-Variations.json",
+      "checksum": "618735d0934b0cbae82b56e33af0dad0dc9b5478c494ccf81544750d6d8f37fd",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 48,
+      "name": "Current Temperature",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_48_Current-Temperature.json",
+      "checksum": "c37e665255d50a6bea3a12e48d4d3d27f28b94449ff2f9bb6718cb1c220d5589",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 49,
+      "name": "Current Precipitation Probability",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_49_Current-Precipitation-Probability.json",
+      "checksum": "7b6ba55ef464ab7e45098a95008c41552da1e2931c721ddd9941e2e72c426d61",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 50,
+      "name": "Today Temperatures",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_50_Today-Temperatures.json",
+      "checksum": "86bda2f2dba28f1fd2bb92750ee52610f74dacaeb51a1ffa37548b44eea7c3c7",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 51,
+      "name": "Today Precipitation Probabilities",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_51_Today-Precipitation-Probabilities.json",
+      "checksum": "93c1cee8378db5910949da5e9080a2b20111b8961f486a0fe02a2b6a89420f2d",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 52,
+      "name": "Today Temperatures Variations",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_52_Today-Temperatures-Variations.json",
+      "checksum": "0921c25cfdb9c4fff30039e6aae14d023fc3c0bdefa5b388a752c340bcd39016",
+      "archived": false,
+      "dataset_query": null,
+      "dataset": false
+    },
+    {
+      "id": 53,
+      "name": "Today Precipitation Probabilities Variations",
+      "collection_id": 5,
+      "database_id": 2,
+      "file_path": "Weather-Report/cards/card_53_Today-Precipitation-Probabilities-Variations.json",
+      "checksum": "fcb5106700acc1d89370f70a001b3301fc6fa4a23e5b828c9d63be4edf3164d8",
+      "archived": false,
       "dataset_query": null,
       "dataset": false
     }
@@ -138,28 +204,26 @@
     {
       "id": 2,
       "name": "Weather Report",
-      "collection_id": 6,
+      "collection_id": 5,
       "ordered_cards": [
         40,
+        41,
         42,
         43,
         44,
         45,
         46,
-        47
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
       ],
       "file_path": "Weather-Report/dashboards/dash_2_Weather-Report.json",
-      "checksum": "57d3482acfbbaf44616b48ce01220f99a88d7fcf135c4fc0ec557d865fa4b5a1",
+      "checksum": "fbcf87e8438ade90171b448151988246907b97021e7795eba6cecd098af39c3a",
       "archived": false
-    },
-    {
-      "id": 1,
-      "name": "E-commerce Insights",
-      "collection_id": 1,
-      "ordered_cards": [],
-      "file_path": "Trash/dashboards/dash_1_E-commerce-Insights.json",
-      "checksum": "fdc6dae9e0ac3adda850a9c84aa9171ab8e041612cfeeb4022d6e4d2510ecc7e",
-      "archived": true
     }
   ],
   "permission_groups": [],
@@ -202,15 +266,15 @@
             },
             {
               "id": 79,
-              "name": "temp_categorized"
+              "name": "valid_from"
             },
             {
               "id": 80,
-              "name": "precip_prob_categorized"
+              "name": "temp_categorized"
             },
             {
               "id": 81,
-              "name": "valid_from"
+              "name": "precip_prob_categorized"
             },
             {
               "id": 82,
@@ -312,35 +376,47 @@
           "fields": [
             {
               "id": 102,
-              "name": "latitude"
+              "name": "hour_"
             },
             {
               "id": 103,
-              "name": "longitude"
+              "name": "latitude"
             },
             {
               "id": 104,
-              "name": "elevation"
+              "name": "longitude"
             },
             {
               "id": 105,
-              "name": "temperature"
+              "name": "elevation"
             },
             {
               "id": 106,
-              "name": "temp_categorized"
+              "name": "temperature"
             },
             {
               "id": 107,
-              "name": "precip_prob"
+              "name": "temp_categorized"
             },
             {
               "id": 108,
-              "name": "precip_prob_categorized"
+              "name": "precip_prob"
             },
             {
               "id": 109,
-              "name": "hour_"
+              "name": "precip_prob_categorized"
+            },
+            {
+              "id": 110,
+              "name": "valid_from"
+            },
+            {
+              "id": 111,
+              "name": "valid_to"
+            },
+            {
+              "id": 112,
+              "name": "is_current"
             }
           ]
         },
@@ -349,43 +425,51 @@
           "name": "week_weather_report",
           "fields": [
             {
-              "id": 110,
-              "name": "date_day"
-            },
-            {
-              "id": 111,
-              "name": "latitude"
-            },
-            {
-              "id": 112,
-              "name": "longitude"
-            },
-            {
               "id": 113,
-              "name": "elevation"
+              "name": "rn"
             },
             {
               "id": 114,
-              "name": "avg_temperature"
+              "name": "date_day"
             },
             {
               "id": 115,
-              "name": "min_temperature"
+              "name": "latitude"
             },
             {
               "id": 116,
-              "name": "max_temperature"
+              "name": "longitude"
             },
             {
               "id": 117,
-              "name": "avg_precip_prob"
+              "name": "elevation"
             },
             {
               "id": 118,
-              "name": "min_precip_prob"
+              "name": "is_current"
             },
             {
               "id": 119,
+              "name": "min_temperature"
+            },
+            {
+              "id": 120,
+              "name": "avg_temperature"
+            },
+            {
+              "id": 121,
+              "name": "max_temperature"
+            },
+            {
+              "id": 122,
+              "name": "min_precip_prob"
+            },
+            {
+              "id": 123,
+              "name": "avg_precip_prob"
+            },
+            {
+              "id": 124,
               "name": "max_precip_prob"
             }
           ]

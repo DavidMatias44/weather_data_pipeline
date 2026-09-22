@@ -1,0 +1,299 @@
+{
+  "cache_invalidated_at": "2026-09-22T19:24:25.285626Z",
+  "description": null,
+  "archived": false,
+  "view_count": 3,
+  "collection_position": null,
+  "source_card_id": null,
+  "table_id": null,
+  "can_run_adhoc_query": true,
+  "result_metadata": [
+    {
+      "database_type": "text",
+      "semantic_type": null,
+      "lib/deduplicated-name": "hour_",
+      "lib/original-name": "hour_",
+      "name": "hour_",
+      "lib/source": "source/native",
+      "lib/source-column-alias": "hour_",
+      "source": "native",
+      "field_ref": [
+        "field",
+        "hour_",
+        {
+          "base-type": "type/Text"
+        }
+      ],
+      "effective_type": "type/Text",
+      "lib/desired-column-alias": "hour_",
+      "display_name": "hour_",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 24,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0.0,
+            "percent-url": 0.0,
+            "percent-email": 0.0,
+            "percent-state": 0.0,
+            "percent-blank": 0.0,
+            "average-length": 5.0,
+            "mode-fraction": 0.041666666666666664,
+            "top-3-fraction": 0.125
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "database_type": "float4",
+      "semantic_type": null,
+      "lib/deduplicated-name": "forecast_t_minus_2",
+      "lib/original-name": "forecast_t_minus_2",
+      "name": "forecast_t_minus_2",
+      "lib/source": "source/native",
+      "lib/source-column-alias": "forecast_t_minus_2",
+      "source": "native",
+      "field_ref": [
+        "field",
+        "forecast_t_minus_2",
+        {
+          "base-type": "type/Float"
+        }
+      ],
+      "effective_type": "type/Float",
+      "lib/desired-column-alias": "forecast_t_minus_2",
+      "display_name": "forecast_t_minus_2",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 22,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": 0.3871925327985248,
+            "min": 15.300000190734863,
+            "q1": 16.700000762939453,
+            "q3": 23.100000381469727,
+            "excess-kurtosis": -1.202117263628371,
+            "zero-fraction": 0.0,
+            "mode-fraction": 0.08333333333333333,
+            "top-3-fraction": 0.20833333333333334,
+            "max": 26.5,
+            "sd": 3.7097770527802383,
+            "avg": 19.962499976158142
+          }
+        }
+      },
+      "base_type": "type/Float"
+    },
+    {
+      "database_type": "float4",
+      "semantic_type": null,
+      "lib/deduplicated-name": "forecast_t_minus_1",
+      "lib/original-name": "forecast_t_minus_1",
+      "name": "forecast_t_minus_1",
+      "lib/source": "source/native",
+      "lib/source-column-alias": "forecast_t_minus_1",
+      "source": "native",
+      "field_ref": [
+        "field",
+        "forecast_t_minus_1",
+        {
+          "base-type": "type/Float"
+        }
+      ],
+      "effective_type": "type/Float",
+      "lib/desired-column-alias": "forecast_t_minus_1",
+      "display_name": "forecast_t_minus_1",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 24,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": 0.6684906470681128,
+            "min": 15.699999809265137,
+            "q1": 17.100000381469727,
+            "q3": 23.399999618530273,
+            "excess-kurtosis": -0.9545798257070532,
+            "zero-fraction": 0.0,
+            "mode-fraction": 0.041666666666666664,
+            "top-3-fraction": 0.125,
+            "max": 27.799999237060547,
+            "sd": 4.05567888928934,
+            "avg": 20.537499944368992
+          }
+        }
+      },
+      "base_type": "type/Float"
+    },
+    {
+      "database_type": "float4",
+      "semantic_type": null,
+      "lib/deduplicated-name": "current_forecast",
+      "lib/original-name": "current_forecast",
+      "name": "current_forecast",
+      "lib/source": "source/native",
+      "lib/source-column-alias": "current_forecast",
+      "source": "native",
+      "field_ref": [
+        "field",
+        "current_forecast",
+        {
+          "base-type": "type/Float"
+        }
+      ],
+      "effective_type": "type/Float",
+      "lib/desired-column-alias": "current_forecast",
+      "display_name": "current_forecast",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 23,
+          "nil%": 0.0
+        },
+        "type": {
+          "type/Number": {
+            "skewness": 0.3814967501800022,
+            "min": 16.200000762939453,
+            "q1": 17.0,
+            "q3": 24.899999618530273,
+            "excess-kurtosis": -1.363360108416955,
+            "zero-fraction": 0.0,
+            "mode-fraction": 0.08333333333333333,
+            "top-3-fraction": 0.16666666666666666,
+            "max": 28.700000762939453,
+            "sd": 4.170939741854097,
+            "avg": 21.225000143051155
+          }
+        }
+      },
+      "base_type": "type/Float"
+    }
+  ],
+  "embedding_type": null,
+  "creator": {
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "is_data_analyst": false,
+    "last_login": "2026-09-22T19:28:57.754278Z",
+    "is_qbnewb": false,
+    "is_superuser": true,
+    "id": 1,
+    "last_name": "Matias",
+    "tenant_id": null,
+    "date_joined": "2026-09-22T19:23:40.293317Z",
+    "common_name": "David Matias"
+  },
+  "initially_published_at": null,
+  "can_write": true,
+  "card_schema": 23,
+  "database_id": 2,
+  "enable_embedding": false,
+  "collection_id": 5,
+  "query_type": "native",
+  "name": "Today Temperatures Variations",
+  "last_query_start": "2026-09-22T19:26:41.539654Z",
+  "is_remote_synced": false,
+  "dashboard_count": 1,
+  "document_id": null,
+  "last_used_at": "2026-09-22T19:26:41.684288Z",
+  "dashboard": {
+    "name": "Weather Report",
+    "id": 2,
+    "moderation_status": null
+  },
+  "type": "question",
+  "dimensions": null,
+  "average_query_time": 44.0,
+  "creator_id": 1,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2026-09-22T19:24:25.289542Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "dataset_query": {
+    "lib/type": "mbql/query",
+    "database": 2,
+    "stages": [
+      {
+        "lib/type": "mbql.stage/native",
+        "native": "SELECT\n\thour_,\n\tforecast_t_minus_2,\n\tforecast_t_minus_1,\n\tcurrent_forecast\nFROM (\n\tSELECT\n\t\thour_,\n\t\tLAG(temperature, 2) OVER(PARTITION BY hour_ ORDER BY valid_to) AS forecast_t_minus_2,\n\t\tLAG(temperature, 1) OVER(PARTITION BY hour_ ORDER BY valid_to) AS forecast_t_minus_1,\n\t\ttemperature AS current_forecast,\n\t\tis_current\n\tFROM wdp.today_weather_report\n) AS t1\nWHERE is_current = 1;"
+      }
+    ]
+  },
+  "dimension_mappings": null,
+  "id": 52,
+  "legacy_query": null,
+  "parameter_mappings": [],
+  "can_manage_db": true,
+  "display": "line",
+  "archived_directly": false,
+  "entity_id": "ygCe6fOGVhdGfgq1nJOvq",
+  "param_fields": {},
+  "collection_preview": true,
+  "last-edit-info": {
+    "id": 1,
+    "email": "admin@mail.com",
+    "first_name": "David",
+    "last_name": "Matias",
+    "timestamp": "2026-09-22T19:24:25.308849Z"
+  },
+  "visualization_settings": {
+    "series_settings": {
+      "forecast_t_minus_2": {
+        "axis": "left",
+        "title": "Forecast T-2"
+      },
+      "forecast_t_minus_1": {
+        "title": "Forecast T-1",
+        "axis": "left"
+      },
+      "current_forecast": {
+        "title": "Current Forecast",
+        "axis": "left"
+      }
+    },
+    "graph.x_axis.title_text": "Hour",
+    "graph.y_axis.title_text": "Temperatures",
+    "graph.x_axis.scale": "ordinal",
+    "graph.dimensions": [
+      "hour_"
+    ],
+    "graph.metrics": [
+      "forecast_t_minus_2",
+      "forecast_t_minus_1",
+      "current_forecast"
+    ]
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "weather_report",
+    "archive_operation_id": null,
+    "name": "Weather Report",
+    "is_remote_synced": false,
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "id": 5,
+    "archived_directly": null,
+    "entity_id": "HenFs0lpC8OFhiR3uYSPc",
+    "location": "/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2026-09-22T19:24:23.352408Z"
+  },
+  "metabase_version": "v0.63.1.4 (9bd2d23)",
+  "parameters": [],
+  "dashboard_id": 2,
+  "created_at": "2026-09-22T19:24:24.152481Z",
+  "parameter_usage_count": 0,
+  "public_uuid": null,
+  "can_delete": false
+}
